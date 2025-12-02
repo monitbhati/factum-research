@@ -127,7 +127,7 @@ export const ServicesPage = () => {
       </section>
 
       {/* Why Choose Our Services */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-50">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-orange-50">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Choose Our Services</h2>
