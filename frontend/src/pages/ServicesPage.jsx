@@ -95,7 +95,7 @@ export const ServicesPage = () => {
       </section>
 
       {/* Services Grid */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-yellow-50/50 to-white">
         <div className="container mx-auto">
           <div className="grid md:grid-cols-2 gap-8 max-w-7xl mx-auto">
             {services.map((service) => {
