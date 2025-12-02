@@ -28,6 +28,7 @@ function App() {
           <Route path="/services/survey-designing" element={<SurveyDesigningPage />} />
           <Route path="/join-us" element={<JoinUsPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/logo-showcase" element={<LogoShowcase />} />
           <Route path="/admin/login" element={<AdminLoginPage />} />
           <Route path="/admin/dashboard" element={<AdminDashboardPage />} />
         </Routes>
