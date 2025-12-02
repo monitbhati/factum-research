@@ -182,7 +182,8 @@ export const ServicesPage = () => {
             </Button>
           </Link>
         </div>
-      </section>
+        </section>
+      </div>
 
       <Footer />
     </div>
