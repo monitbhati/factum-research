@@ -319,6 +319,7 @@ export const SurveyDesigningPage = () => {
       </section>
 
       <Footer />
+      </div>
     </div>
   );
 };
