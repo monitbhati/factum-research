@@ -25,21 +25,9 @@ export const HomePage = () => {
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
               {mockData.company.tagline}
             </h1>
-            <p className="text-lg sm:text-xl text-gray-600 mb-10 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               {mockData.company.description}
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/contact">
-                <Button size="lg" className="bg-slate-800 hover:bg-slate-900 text-lg px-8 h-14">
-                  Initiate Consultation <ArrowRight className="ml-2" size={20} />
-                </Button>
-              </Link>
-              <Link to="/services">
-                <Button size="lg" variant="outline" className="text-lg px-8 h-14 border-2 border-slate-800 text-slate-800 hover:bg-slate-50">
-                  Explore Capabilities
-                </Button>
-              </Link>
-            </div>
           </div>
 
           {/* Stats */}
