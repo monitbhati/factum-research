@@ -219,7 +219,8 @@ export const ContactPage = () => {
             </div>
           </div>
         </div>
-      </section>
+        </section>
+      </div>
 
       <Footer />
     </div>
