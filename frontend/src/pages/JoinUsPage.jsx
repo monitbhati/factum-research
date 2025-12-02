@@ -1,23 +1,22 @@
 import React, { useState } from 'react';
 import { Button } from '../components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '../components/ui/card';
 import { Input } from '../components/ui/input';
 import { Label } from '../components/ui/label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../components/ui/select';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '../components/ui/tabs';
-import { toast } from 'sonner';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
-import { UserPlus, LogIn } from 'lucide-react';
+import { toast } from 'sonner';
 import axios from 'axios';
 
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 const API = `${BACKEND_URL}/api`;
 
 export const JoinUsPage = () => {
+  const [activeTab, setActiveTab] = useState('signup');
   const [signupData, setSignupData] = useState({
-    name: '',
-    surname: '',
+    firstName: '',
+    lastName: '',
     email: '',
     age: '',
     country: '',
@@ -25,59 +24,35 @@ export const JoinUsPage = () => {
     gender: '',
     password: ''
   });
-
   const [loginData, setLoginData] = useState({
     email: '',
     password: ''
   });
-
   const [loading, setLoading] = useState(false);
-  const [activeTab, setActiveTab] = useState('signup');
 
   const handleSignupChange = (e) => {
-    setSignupData({
-      ...signupData,
-      [e.target.name]: e.target.value
-    });
+    setSignupData({ ...signupData, [e.target.name]: e.target.value });
   };
 
   const handleLoginChange = (e) => {
-    setLoginData({
-      ...loginData,
-      [e.target.name]: e.target.value
-    });
+    setLoginData({ ...loginData, [e.target.name]: e.target.value });
+  };
+
+  const handleSelectChange = (name, value) => {
+    setSignupData({ ...signupData, [name]: value });
   };
 
   const handleSignup = async (e) => {
     e.preventDefault();
     setLoading(true);
-    
     try {
-      const response = await axios.post(`${API}/auth/signup`, {
-        ...signupData,
-        age: parseInt(signupData.age)
-      });
-      
-      toast.success(response.data.message || 'Account created successfully! Please login to continue.');
-      
-      // Reset form
-      setSignupData({
-        name: '',
-        surname: '',
-        email: '',
-        age: '',
-        country: '',
-        profession: '',
-        gender: '',
-        password: ''
-      });
-      
-      // Switch to login tab
+      const response = await axios.post(`${API}/auth/signup`, signupData);
+      toast.success('Registration successful!');
+      setSignupData({ firstName: '', lastName: '', email: '', age: '', country: '', profession: '', gender: '', password: '' });
       setActiveTab('login');
     } catch (error) {
       console.error('Signup error:', error);
-      const errorMessage = error.response?.data?.detail || 'Failed to create account. Please try again.';
-      toast.error(errorMessage);
+      toast.error(error.response?.data?.detail || 'Registration failed');
     } finally {
       setLoading(false);
     }
@@ -86,347 +61,323 @@ export const JoinUsPage = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     setLoading(true);
-    
     try {
       const response = await axios.post(`${API}/auth/login`, loginData);
-      
-      // Store token in localStorage
-      localStorage.setItem('access_token', response.data.access_token);
-      localStorage.setItem('user', JSON.stringify(response.data.user));
-      
-      toast.success(`Welcome back, ${response.data.user.name}!`);
-      
-      // Reset form
-      setLoginData({
-        email: '',
-        password: ''
-      });
+      localStorage.setItem('token', response.data.token);
+      toast.success('Login successful!');
+      setLoginData({ email: '', password: '' });
     } catch (error) {
       console.error('Login error:', error);
-      const errorMessage = error.response?.data?.detail || 'Login failed. Please check your credentials.';
-      toast.error(errorMessage);
+      toast.error(error.response?.data?.detail || 'Login failed');
     } finally {
       setLoading(false);
     }
   };
 
   return (
-    <div className="min-h-screen bg-white">
-      <Header />
+    <div className="min-h-screen bg-white relative">
+      {/* Full Page Background Image */}
+      <div className="fixed inset-0 z-0">
+        <img 
+          src="https://images.unsplash.com/photo-1758873269317-51888e824b28?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzd8MHwxfHNlYXJjaHwxfHxkaXZlcnNlJTIwcGVvcGxlJTIwbWVldGluZ3xlbnwwfHx8fDE3NjQ3MTcxNzd8MA&ixlib=rb-4.1.0&q=85" 
+          alt="Diverse Team"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-purple-900/90 via-pink-900/85 to-yellow-900/85"></div>
+      </div>
+      
+      <div className="relative z-10">
+        <Header />
 
-      {/* Page Header */}
-      <section className="relative pt-32 pb-16 px-4 sm:px-6 lg:px-8 min-h-[550px] flex items-center">
-        {/* Background Image with Overlay */}
-        <div className="absolute inset-0 z-0">
-          <img 
-            src="https://images.unsplash.com/photo-1758873269317-51888e824b28?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzd8MHwxfHNlYXJjaHwxfHxkaXZlcnNlJTIwcGVvcGxlJTIwbWVldGluZ3xlbnwwfHx8fDE3NjQ3MTcxNzd8MA&ixlib=rb-4.1.0&q=85" 
-            alt="Diverse Team"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-purple-900/90 via-pink-900/85 to-yellow-900/80"></div>
-        </div>
-        
-        <div className="container mx-auto relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-block px-5 py-2 bg-yellow-400/90 backdrop-blur-sm rounded-full text-sm font-bold text-purple-900 mb-4 shadow-lg">
-              Your Voice Matters
+        {/* Page Header */}
+        <section className="pt-32 pb-16 px-4 sm:px-6 lg:px-8 min-h-[550px] flex items-center">
+          <div className="container mx-auto">
+            <div className="max-w-4xl mx-auto text-center">
+              <div className="inline-block px-5 py-2 bg-yellow-400/90 backdrop-blur-sm rounded-full text-sm font-bold text-purple-900 mb-4 shadow-lg">
+                Your Voice Matters
+              </div>
+              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
+                Join Our Global Panel
+              </h1>
+              <p className="text-lg sm:text-xl text-gray-100 leading-relaxed mb-4 drop-shadow-md">
+                Turn your opinions into income. Share your thoughts on products, services, and trends while earning rewards from the comfort of your home.
+              </p>
+              <div className="flex flex-wrap gap-6 justify-center mt-8 text-left max-w-3xl mx-auto">
+                <div className="flex items-start gap-3">
+                  <div className="w-12 h-12 bg-green-400 rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
+                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-white drop-shadow-md">Earn Extra Income</h3>
+                    <p className="text-sm text-gray-200 drop-shadow">Get paid for sharing your opinions</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
+                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-white drop-shadow-md">Flexible Timing</h3>
+                    <p className="text-sm text-gray-200 drop-shadow">Work on your own schedule</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-12 h-12 bg-pink-500 rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
+                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-white drop-shadow-md">Simple & Easy</h3>
+                    <p className="text-sm text-gray-200 drop-shadow">Quick online surveys</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
-              Join Our Global Panel
-            </h1>
-            <p className="text-lg sm:text-xl text-gray-100 leading-relaxed mb-4 drop-shadow-md">
-              Turn your opinions into income. Share your thoughts on products, services, and trends while earning rewards from the comfort of your home.
-            </p>
-            <div className="flex flex-wrap gap-6 justify-center mt-8 text-left max-w-3xl mx-auto">
-              <div className="flex items-start gap-3">
-                <div className="w-12 h-12 bg-green-400 rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
-                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          </div>
+        </section>
+
+        {/* Why Join Section */}
+        <section className="py-20 px-4 sm:px-6 lg:px-8">
+          <div className="container mx-auto max-w-6xl">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold text-white mb-4 drop-shadow-lg">Why Researchers Love Our Panel</h2>
+              <p className="text-lg text-gray-100 drop-shadow-md">Join thousands of panelists making a difference</p>
+            </div>
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="bg-white/95 backdrop-blur-md p-8 rounded-2xl border-2 border-yellow-200 shadow-xl text-center hover:scale-105 transition-all">
+                <div className="w-20 h-20 bg-gradient-to-br from-yellow-400 to-pink-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                  <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">Diverse Opportunities</h3>
+                <p className="text-gray-700">Access surveys across industries</p>
+                <div className="mt-4 bg-gradient-to-r from-yellow-500 to-pink-700 text-white px-4 py-3 rounded-lg">
+                  <p className="text-2xl font-bold">500+</p>
+                  <p className="text-sm">Surveys Monthly</p>
+                </div>
+              </div>
+              <div className="bg-white/95 backdrop-blur-md p-8 rounded-2xl border-2 border-yellow-200 shadow-xl text-center hover:scale-105 transition-all">
+                <div className="w-20 h-20 bg-gradient-to-br from-yellow-400 to-pink-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                  <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
-                <div>
-                  <h3 className="font-semibold text-white drop-shadow-md">Earn Extra Income</h3>
-                  <p className="text-sm text-gray-200 drop-shadow">Get paid for sharing your opinions</p>
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">Competitive Rewards</h3>
+                <p className="text-gray-700">Earn for every completed survey</p>
+                <div className="mt-4 bg-gradient-to-r from-yellow-500 to-pink-700 text-white px-4 py-3 rounded-lg">
+                  <p className="text-2xl font-bold">Fast Payouts</p>
+                  <p className="text-sm">Multiple options</p>
                 </div>
               </div>
-              <div className="flex items-start gap-3">
-                <div className="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
-                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              <div className="bg-white/95 backdrop-blur-md p-8 rounded-2xl border-2 border-yellow-200 shadow-xl text-center hover:scale-105 transition-all">
+                <div className="w-20 h-20 bg-gradient-to-br from-yellow-400 to-pink-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                  <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                   </svg>
                 </div>
-                <div>
-                  <h3 className="font-semibold text-white drop-shadow-md">Flexible Timing</h3>
-                  <p className="text-sm text-gray-200 drop-shadow">Work on your own schedule</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-3">
-                <div className="w-12 h-12 bg-pink-500 rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
-                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-gray-900">Simple Surveys</h3>
-                  <p className="text-sm text-gray-600">Easy questions, no special skills needed</p>
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">Data Privacy</h3>
+                <p className="text-gray-700">Your information is secure</p>
+                <div className="mt-4 bg-gradient-to-r from-yellow-500 to-pink-700 text-white px-4 py-3 rounded-lg">
+                  <p className="text-2xl font-bold">100% Secure</p>
+                  <p className="text-sm">Encrypted data</p>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Benefits Section */}
-      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-white border-y border-gray-200">
-        <div className="container mx-auto">
-          <div className="max-w-5xl mx-auto">
-            <h2 className="text-3xl font-bold text-gray-900 text-center mb-8">Why Join Our Panel?</h2>
-            <div className="grid md:grid-cols-3 gap-6">
-              <div className="text-center p-6 bg-gradient-to-br from-green-50 to-green-100 rounded-xl">
-                <div className="text-4xl font-bold text-green-600 mb-2">Earn Money</div>
-                <p className="text-white font-medium drop-shadow-md font-medium mb-2">Get Paid Per Survey</p>
-                <p className="text-sm text-gray-600">Answer simple questions and receive payments directly to your account</p>
-              </div>
-              <div className="text-center p-6 bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl">
-                <div className="text-4xl font-bold text-blue-600 mb-2">Flexibility</div>
-                <p className="text-white font-medium drop-shadow-md font-medium mb-2">Work Anytime, Anywhere</p>
-                <p className="text-sm text-gray-600">Complete surveys from your phone, tablet, or computer at your convenience</p>
-              </div>
-              <div className="text-center p-6 bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl">
-                <div className="text-4xl font-bold text-purple-600 mb-2">Impact</div>
-                <p className="text-white font-medium drop-shadow-md font-medium mb-2">Shape Products & Services</p>
-                <p className="text-sm text-gray-600">Your opinions help companies improve their offerings and make better decisions</p>
-              </div>
-            </div>
+        {/* Signup/Login Forms */}
+        <section className="py-20 px-4 sm:px-6 lg:px-8">
+          <div className="container mx-auto max-w-2xl">
+            <Card className="border-2 border-yellow-200 shadow-2xl bg-white/98 backdrop-blur-lg">
+              <CardHeader>
+                <div className="flex gap-2 mb-6">
+                  <button
+                    onClick={() => setActiveTab('signup')}
+                    className={`flex-1 py-3 rounded-lg font-semibold transition-all ${
+                      activeTab === 'signup'
+                        ? 'bg-gradient-to-r from-yellow-500 to-pink-700 text-white shadow-lg'
+                        : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                    }`}
+                  >
+                    Sign Up
+                  </button>
+                  <button
+                    onClick={() => setActiveTab('login')}
+                    className={`flex-1 py-3 rounded-lg font-semibold transition-all ${
+                      activeTab === 'login'
+                        ? 'bg-gradient-to-r from-yellow-500 to-pink-700 text-white shadow-lg'
+                        : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                    }`}
+                  >
+                    Login
+                  </button>
+                </div>
+              </CardHeader>
+              <CardContent>
+                {activeTab === 'signup' ? (
+                  <div>
+                    <CardHeader className="bg-gradient-to-r from-yellow-50 to-pink-50 border-b border-gray-100">
+                      <CardTitle className="text-2xl">Create Your Account</CardTitle>
+                      <CardDescription>Join our panel and start earning today</CardDescription>
+                    </CardHeader>
+                    <CardContent className="pt-6">
+                      <form onSubmit={handleSignup} className="space-y-4">
+                        <div className="grid grid-cols-2 gap-4">
+                          <div>
+                            <Label htmlFor="firstName">First Name *</Label>
+                            <Input
+                              id="firstName"
+                              name="firstName"
+                              value={signupData.firstName}
+                              onChange={handleSignupChange}
+                              required
+                            />
+                          </div>
+                          <div>
+                            <Label htmlFor="lastName">Last Name *</Label>
+                            <Input
+                              id="lastName"
+                              name="lastName"
+                              value={signupData.lastName}
+                              onChange={handleSignupChange}
+                              required
+                            />
+                          </div>
+                        </div>
+                        <div>
+                          <Label htmlFor="email">Email *</Label>
+                          <Input
+                            id="email"
+                            name="email"
+                            type="email"
+                            value={signupData.email}
+                            onChange={handleSignupChange}
+                            required
+                          />
+                        </div>
+                        <div>
+                          <Label htmlFor="password">Password *</Label>
+                          <Input
+                            id="password"
+                            name="password"
+                            type="password"
+                            value={signupData.password}
+                            onChange={handleSignupChange}
+                            required
+                          />
+                        </div>
+                        <div className="grid grid-cols-2 gap-4">
+                          <div>
+                            <Label htmlFor="age">Age *</Label>
+                            <Input
+                              id="age"
+                              name="age"
+                              type="number"
+                              value={signupData.age}
+                              onChange={handleSignupChange}
+                              required
+                            />
+                          </div>
+                          <div>
+                            <Label htmlFor="gender">Gender *</Label>
+                            <Select name="gender" onValueChange={(value) => handleSelectChange('gender', value)} required>
+                              <SelectTrigger>
+                                <SelectValue placeholder="Select" />
+                              </SelectTrigger>
+                              <SelectContent>
+                                <SelectItem value="male">Male</SelectItem>
+                                <SelectItem value="female">Female</SelectItem>
+                                <SelectItem value="other">Other</SelectItem>
+                              </SelectContent>
+                            </Select>
+                          </div>
+                        </div>
+                        <div>
+                          <Label htmlFor="country">Country *</Label>
+                          <Input
+                            id="country"
+                            name="country"
+                            value={signupData.country}
+                            onChange={handleSignupChange}
+                            required
+                          />
+                        </div>
+                        <div>
+                          <Label htmlFor="profession">Profession *</Label>
+                          <Input
+                            id="profession"
+                            name="profession"
+                            value={signupData.profession}
+                            onChange={handleSignupChange}
+                            required
+                          />
+                        </div>
+                        <Button
+                          type="submit"
+                          disabled={loading}
+                          className="w-full bg-gradient-to-r from-yellow-500 to-pink-700 hover:from-yellow-600 hover:to-pink-800 h-12 text-base"
+                        >
+                          {loading ? 'Creating Account...' : 'Create Account'}
+                        </Button>
+                      </form>
+                    </CardContent>
+                  </div>
+                ) : (
+                  <div>
+                    <CardHeader className="bg-gradient-to-r from-yellow-50 to-pink-50 border-b border-gray-100">
+                      <CardTitle className="text-2xl">Welcome Back</CardTitle>
+                      <CardDescription>Login to your panelist account</CardDescription>
+                    </CardHeader>
+                    <CardContent className="pt-6">
+                      <form onSubmit={handleLogin} className="space-y-4">
+                        <div>
+                          <Label htmlFor="loginEmail">Email *</Label>
+                          <Input
+                            id="loginEmail"
+                            name="email"
+                            type="email"
+                            value={loginData.email}
+                            onChange={handleLoginChange}
+                            required
+                          />
+                        </div>
+                        <div>
+                          <Label htmlFor="loginPassword">Password *</Label>
+                          <Input
+                            id="loginPassword"
+                            name="password"
+                            type="password"
+                            value={loginData.password}
+                            onChange={handleLoginChange}
+                            required
+                          />
+                        </div>
+                        <Button
+                          type="submit"
+                          disabled={loading}
+                          className="w-full bg-gradient-to-r from-yellow-500 to-pink-700 hover:from-yellow-600 hover:to-pink-800 h-12 text-base"
+                        >
+                          {loading ? 'Logging in...' : 'Login'}
+                        </Button>
+                        <p className="text-sm text-center text-gray-600">
+                          Forgot your password? <button type="button" className="text-pink-700 font-semibold hover:underline">Reset it here</button>
+                        </p>
+                      </form>
+                    </CardContent>
+                  </div>
+                )}
+              </CardContent>
+            </Card>
           </div>
-        </div>
-      </section>
-
-      {/* Auth Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-yellow-50">
-        <div className="container mx-auto">
-          <div className="max-w-2xl mx-auto">
-            <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
-              <TabsList className="grid w-full grid-cols-2 mb-8">
-                <TabsTrigger value="signup" className="text-lg py-3">
-                  <UserPlus className="mr-2" size={20} />
-                  Sign Up
-                </TabsTrigger>
-                <TabsTrigger value="login" className="text-lg py-3">
-                  <LogIn className="mr-2" size={20} />
-                  Login
-                </TabsTrigger>
-              </TabsList>
-
-              {/* Signup Tab */}
-              <TabsContent value="signup">
-                <Card className="border-2 border-blue-100 shadow-lg">
-                  <CardHeader className="bg-gradient-to-r from-blue-50 to-purple-50 border-b border-blue-100">
-                    <CardTitle className="text-2xl">Become a Panelist Today</CardTitle>
-                    <CardDescription className="text-base">
-                      Join thousands earning extra income by sharing their opinions. Simple registration, verified profiles get priority access to high-paying surveys!
-                    </CardDescription>
-                    <div className="mt-4 bg-gradient-to-r from-yellow-500 to-pink-700 text-white px-4 py-3 rounded-lg">
-                      <p className="text-sm font-semibold text-center">
-                        ✨ Start earning within 24 hours of profile approval
-                      </p>
-                    </div>
-                  </CardHeader>
-                  <CardContent>
-                    <form onSubmit={handleSignup} className="space-y-5">
-                      <div className="grid md:grid-cols-2 gap-5">
-                        <div>
-                          <Label htmlFor="name" className="text-sm font-semibold text-white font-medium drop-shadow-md mb-2">First Name *</Label>
-                          <Input
-                            id="name"
-                            name="name"
-                            value={signupData.name}
-                            onChange={handleSignupChange}
-                            placeholder="Enter your first name"
-                            className="h-12"
-                            required
-                          />
-                        </div>
-                        <div>
-                          <Label htmlFor="surname" className="text-sm font-semibold text-white font-medium drop-shadow-md mb-2">Surname *</Label>
-                          <Input
-                            id="surname"
-                            name="surname"
-                            value={signupData.surname}
-                            onChange={handleSignupChange}
-                            placeholder="Enter your surname"
-                            className="h-12"
-                            required
-                          />
-                        </div>
-                      </div>
-
-                      <div>
-                        <Label htmlFor="email" className="text-sm font-semibold text-white font-medium drop-shadow-md mb-2">Email Address *</Label>
-                        <Input
-                          id="email"
-                          name="email"
-                          type="email"
-                          value={signupData.email}
-                          onChange={handleSignupChange}
-                          placeholder="your@email.com"
-                          className="h-12"
-                          required
-                        />
-                      </div>
-
-                      <div className="grid md:grid-cols-2 gap-5">
-                        <div>
-                          <Label htmlFor="age" className="text-sm font-semibold text-white font-medium drop-shadow-md mb-2">Age *</Label>
-                          <Input
-                            id="age"
-                            name="age"
-                            type="number"
-                            value={signupData.age}
-                            onChange={handleSignupChange}
-                            placeholder="Your age"
-                            className="h-12"
-                            min="18"
-                            max="100"
-                            required
-                          />
-                        </div>
-                        <div>
-                          <Label htmlFor="gender" className="text-sm font-semibold text-white font-medium drop-shadow-md mb-2">Gender *</Label>
-                          <Select 
-                            value={signupData.gender} 
-                            onValueChange={(value) => setSignupData({...signupData, gender: value})}
-                            required
-                          >
-                            <SelectTrigger className="h-12">
-                              <SelectValue placeholder="Select gender" />
-                            </SelectTrigger>
-                            <SelectContent>
-                              <SelectItem value="male">Male</SelectItem>
-                              <SelectItem value="female">Female</SelectItem>
-                              <SelectItem value="other">Other</SelectItem>
-                              <SelectItem value="prefer-not-to-say">Prefer not to say</SelectItem>
-                            </SelectContent>
-                          </Select>
-                        </div>
-                      </div>
-
-                      <div>
-                        <Label htmlFor="country" className="text-sm font-semibold text-white font-medium drop-shadow-md mb-2">Country *</Label>
-                        <Input
-                          id="country"
-                          name="country"
-                          value={signupData.country}
-                          onChange={handleSignupChange}
-                          placeholder="Your country"
-                          className="h-12"
-                          required
-                        />
-                      </div>
-
-                      <div>
-                        <Label htmlFor="profession" className="text-sm font-semibold text-white font-medium drop-shadow-md mb-2">Profession *</Label>
-                        <Input
-                          id="profession"
-                          name="profession"
-                          value={signupData.profession}
-                          onChange={handleSignupChange}
-                          placeholder="Your profession"
-                          className="h-12"
-                          required
-                        />
-                      </div>
-
-                      <div>
-                        <Label htmlFor="signup-password" className="text-sm font-semibold text-white font-medium drop-shadow-md mb-2">Password *</Label>
-                        <Input
-                          id="signup-password"
-                          name="password"
-                          type="password"
-                          value={signupData.password}
-                          onChange={handleSignupChange}
-                          placeholder="Create a strong password"
-                          className="h-12"
-                          minLength="8"
-                          required
-                        />
-                        <p className="text-xs text-gray-500 mt-1">Minimum 8 characters</p>
-                      </div>
-
-                      <Button 
-                        type="submit" 
-                        className="w-full bg-gradient-to-r from-yellow-500 to-pink-700 hover:from-pink-800 hover:to-red-600 h-12 text-base"
-                        disabled={loading}
-                      >
-                        {loading ? 'Creating Account...' : 'Create Account'}
-                      </Button>
-                    </form>
-                  </CardContent>
-                </Card>
-              </TabsContent>
-
-              {/* Login Tab */}
-              <TabsContent value="login">
-                <Card className="border-2 border-gray-100 shadow-lg">
-                  <CardHeader className="bg-gradient-to-r from-yellow-50 to-pink-50 border-b border-gray-100">
-                    <CardTitle className="text-2xl">Welcome Back, Panelist!</CardTitle>
-                    <CardDescription className="text-base">Login to check available surveys and track your earnings</CardDescription>
-                    <div className="mt-4 flex items-center gap-2 text-sm text-gray-600">
-                      <svg className="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                      </svg>
-                      <span>New surveys available daily</span>
-                    </div>
-                  </CardHeader>
-                  <CardContent>
-                    <form onSubmit={handleLogin} className="space-y-5">
-                      <div>
-                        <Label htmlFor="login-email" className="text-sm font-semibold text-white font-medium drop-shadow-md mb-2">Email Address *</Label>
-                        <Input
-                          id="login-email"
-                          name="email"
-                          type="email"
-                          value={loginData.email}
-                          onChange={handleLoginChange}
-                          placeholder="your@email.com"
-                          className="h-12"
-                          required
-                        />
-                      </div>
-
-                      <div>
-                        <Label htmlFor="login-password" className="text-sm font-semibold text-white font-medium drop-shadow-md mb-2">Password *</Label>
-                        <Input
-                          id="login-password"
-                          name="password"
-                          type="password"
-                          value={loginData.password}
-                          onChange={handleLoginChange}
-                          placeholder="Enter your password"
-                          className="h-12"
-                          required
-                        />
-                      </div>
-
-                      <Button 
-                        type="submit" 
-                        className="w-full bg-gradient-to-r from-yellow-500 to-pink-700 hover:from-pink-800 hover:to-red-600 h-12 text-base"
-                        disabled={loading}
-                      >
-                        {loading ? 'Logging in...' : 'Login'}
-                      </Button>
-
-                      <p className="text-center text-sm text-gray-600">
-                        Forgot your password? <button type="button" className="text-pink-700 font-semibold hover:underline">Reset it here</button>
-                      </p>
-                    </form>
-                  </CardContent>
-                </Card>
-              </TabsContent>
-            </Tabs>
-          </div>
-        </div>
-      </section>
+        </section>
+      </div>
 
       <Footer />
     </div>
