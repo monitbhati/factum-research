@@ -241,7 +241,7 @@ export const AboutPage = () => {
       </section>
 
       {/* Panelist Network */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-transparent">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-white drop-shadow-lg mb-4">Our Global Panelist Network</h2>
@@ -253,13 +253,13 @@ export const AboutPage = () => {
             {panelStats.map((stat, index) => {
               const IconComponent = stat.icon;
               return (
-                <Card key={index} className="border-2 border-gray-100">
+                <Card key={index} className="border-2 border-yellow-300 bg-white/95 backdrop-blur-md">
                   <CardContent className="pt-6 pb-6 text-center">
                     <div className="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mx-auto mb-3">
                       <IconComponent className="text-pink-700" size={24} />
                     </div>
-                    <div className="text-3xl font-bold text-white drop-shadow-lg mb-1">{stat.value}</div>
-                    <div className="text-sm text-gray-100 drop-shadow-md">{stat.label}</div>
+                    <div className="text-3xl font-bold text-gray-900 mb-1">{stat.value}</div>
+                    <div className="text-sm text-gray-700">{stat.label}</div>
                   </CardContent>
                 </Card>
               );
@@ -267,31 +267,31 @@ export const AboutPage = () => {
           </div>
 
           {/* Visual Representation */}
-          <div className="bg-gradient-to-br from-yellow-50 to-pink-50 p-8 rounded-2xl border-2 border-gray-100 mb-8">
+          <div className="bg-white/95 backdrop-blur-md p-8 rounded-2xl border-2 border-pink-300 mb-8">
             <div className="text-center mb-6">
-              <h3 className="text-2xl font-bold text-white drop-shadow-lg mb-2">Truly Global Presence</h3>
-              <p className="text-gray-100 drop-shadow-md">Our panelists span across continents, industries, and demographics</p>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">Truly Global Presence</h3>
+              <p className="text-gray-700">Our panelists span across continents, industries, and demographics</p>
             </div>
             <div className="grid md:grid-cols-5 gap-4 text-center">
               <div>
                 <div className="text-2xl font-bold text-blue-600 mb-1">35%</div>
-                <div className="text-sm text-gray-100 drop-shadow-md">North America</div>
+                <div className="text-sm text-gray-700">North America</div>
               </div>
               <div>
                 <div className="text-2xl font-bold text-green-600 mb-1">30%</div>
-                <div className="text-sm text-gray-100 drop-shadow-md">Europe</div>
+                <div className="text-sm text-gray-700">Europe</div>
               </div>
               <div>
                 <div className="text-2xl font-bold text-purple-600 mb-1">20%</div>
-                <div className="text-sm text-gray-100 drop-shadow-md">Asia Pacific</div>
+                <div className="text-sm text-gray-700">Asia Pacific</div>
               </div>
               <div>
                 <div className="text-2xl font-bold text-pink-700 mb-1">10%</div>
-                <div className="text-sm text-gray-100 drop-shadow-md">Latin America</div>
+                <div className="text-sm text-gray-700">Latin America</div>
               </div>
               <div>
                 <div className="text-2xl font-bold text-red-600 mb-1">5%</div>
-                <div className="text-sm text-gray-100 drop-shadow-md">Middle East & Africa</div>
+                <div className="text-sm text-gray-700">Middle East & Africa</div>
               </div>
             </div>
           </div>
