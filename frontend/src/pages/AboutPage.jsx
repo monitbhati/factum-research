@@ -91,7 +91,7 @@ export const AboutPage = () => {
           <div className="grid md:grid-cols-2 gap-8">
             <Card className="border-2 border-gray-100">
               <CardContent className="pt-8 pb-8">
-                <div className="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+                <div className="w-14 h-14 bg-orange-100 rounded-xl flex items-center justify-center mb-6">
                   <Users className="text-blue-600" size={28} />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Online Sampling</h3>
