@@ -78,14 +78,14 @@ export const AboutPage = () => {
         <div className="container mx-auto max-w-6xl">
           <div className="grid md:grid-cols-2 gap-12">
             <div className="bg-white/95 backdrop-blur-md p-10 rounded-2xl border-2 border-yellow-200 shadow-xl">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Mission</h2>
-              <p className="text-gray-600 leading-relaxed">
+              <h2 className="text-3xl font-bold text-white drop-shadow-lg mb-4">Our Mission</h2>
+              <p className="text-gray-100 drop-shadow-md leading-relaxed">
                 To deliver quality data with speed and efficiency, minimizing complexity while maximizing accuracy. We believe in streamlined processes that provide you with reliable insights when you need them most.
               </p>
             </div>
             <div className="bg-white/95 backdrop-blur-md p-10 rounded-2xl border-2 border-yellow-200 shadow-xl">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Vision</h2>
-              <p className="text-gray-600 leading-relaxed">
+              <h2 className="text-3xl font-bold text-white drop-shadow-lg mb-4">Our Vision</h2>
+              <p className="text-gray-100 drop-shadow-md leading-relaxed">
                 To expand our reach across markets and establish ourselves as the trusted and reliable research partner for life. We envision long-term partnerships built on consistent quality, transparency, and unwavering commitment to your success.
               </p>
             </div>
@@ -94,11 +94,11 @@ export const AboutPage = () => {
       </section>
 
       {/* Our Expertise */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-yellow-50">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-transparent">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Expertise</h2>
-            <p className="text-lg text-gray-600">Specialized capabilities that set us apart</p>
+            <h2 className="text-4xl font-bold text-white drop-shadow-lg mb-4">Our Expertise</h2>
+            <p className="text-lg text-gray-100 drop-shadow-md">Specialized capabilities that set us apart</p>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
             <Card className="border-2 border-gray-100">
@@ -106,8 +106,8 @@ export const AboutPage = () => {
                 <div className="w-14 h-14 bg-yellow-100 rounded-xl flex items-center justify-center mb-6">
                   <Users className="text-blue-600" size={28} />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-3">Online Sampling</h3>
-                <p className="text-gray-600 mb-4 leading-relaxed">
+                <h3 className="text-2xl font-bold text-white drop-shadow-lg mb-3">Online Sampling</h3>
+                <p className="text-gray-100 drop-shadow-md mb-4 leading-relaxed">
                   Comprehensive online sampling solutions across diverse audience segments, delivering precise targeting and high-quality respondent engagement.
                 </p>
                 <ul className="space-y-2">
@@ -132,8 +132,8 @@ export const AboutPage = () => {
                 <div className="w-14 h-14 bg-purple-100 rounded-xl flex items-center justify-center mb-6">
                   <Target className="text-purple-600" size={28} />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-3">Qualitative Research</h3>
-                <p className="text-gray-600 mb-4 leading-relaxed">
+                <h3 className="text-2xl font-bold text-white drop-shadow-lg mb-3">Qualitative Research</h3>
+                <p className="text-gray-100 drop-shadow-md mb-4 leading-relaxed">
                   Deep-dive qualitative methodologies that uncover insights beyond numbers, revealing the 'why' behind consumer behaviors and market trends.
                 </p>
                 <ul className="space-y-2">
@@ -160,16 +160,16 @@ export const AboutPage = () => {
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">What Makes Us Unique</h2>
-            <p className="text-lg text-gray-600">Distinctive advantages that define our approach</p>
+            <h2 className="text-4xl font-bold text-white drop-shadow-lg mb-4">What Makes Us Unique</h2>
+            <p className="text-lg text-gray-100 drop-shadow-md">Distinctive advantages that define our approach</p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="w-16 h-16 bg-gradient-to-br from-blue-100 to-blue-200 rounded-2xl flex items-center justify-center mx-auto mb-4">
                 <Target className="text-blue-600" size={32} />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Niche Audience Access</h3>
-              <p className="text-gray-600 leading-relaxed">
+              <h3 className="text-xl font-bold text-white drop-shadow-lg mb-3">Niche Audience Access</h3>
+              <p className="text-gray-100 drop-shadow-md leading-relaxed">
                 Exclusive access to hard-to-reach professionals and specialized audience segments that others struggle to find.
               </p>
             </div>
@@ -177,8 +177,8 @@ export const AboutPage = () => {
               <div className="w-16 h-16 bg-gradient-to-br from-green-100 to-green-200 rounded-2xl flex items-center justify-center mx-auto mb-4">
                 <Globe className="text-green-600" size={32} />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Global Reach</h3>
-              <p className="text-gray-600 leading-relaxed">
+              <h3 className="text-xl font-bold text-white drop-shadow-lg mb-3">Global Reach</h3>
+              <p className="text-gray-100 drop-shadow-md leading-relaxed">
                 Pan-global panel network spanning 50+ countries with verified panelists across all major markets.
               </p>
             </div>
@@ -186,8 +186,8 @@ export const AboutPage = () => {
               <div className="w-16 h-16 bg-gradient-to-br from-purple-100 to-purple-200 rounded-2xl flex items-center justify-center mx-auto mb-4">
                 <Shield className="text-purple-600" size={32} />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Strict Quality Checks</h3>
-              <p className="text-gray-600 leading-relaxed">
+              <h3 className="text-xl font-bold text-white drop-shadow-lg mb-3">Strict Quality Checks</h3>
+              <p className="text-gray-100 drop-shadow-md leading-relaxed">
                 Multi-layered quality assurance protocols ensuring every data point meets the highest standards of accuracy and reliability.
               </p>
             </div>
@@ -199,8 +199,8 @@ export const AboutPage = () => {
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-yellow-50 to-white">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">What Makes Our Sample Quality Better</h2>
-            <p className="text-lg text-gray-600">Three pillars of excellence</p>
+            <h2 className="text-4xl font-bold text-white drop-shadow-lg mb-4">What Makes Our Sample Quality Better</h2>
+            <p className="text-lg text-gray-100 drop-shadow-md">Three pillars of excellence</p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="border-2 border-gray-100 hover:shadow-lg transition-shadow">
@@ -208,8 +208,8 @@ export const AboutPage = () => {
                 <div className="w-14 h-14 bg-red-100 rounded-xl flex items-center justify-center mx-auto mb-4">
                   <Shield className="text-red-600" size={28} />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">Rigorous QC Protocols</h3>
-                <p className="text-gray-600 leading-relaxed">
+                <h3 className="text-xl font-bold text-white drop-shadow-lg mb-3">Rigorous QC Protocols</h3>
+                <p className="text-gray-100 drop-shadow-md leading-relaxed">
                   Real-time quality monitoring, behavioral validation, and fraud detection systems ensure pristine data integrity.
                 </p>
               </CardContent>
@@ -219,8 +219,8 @@ export const AboutPage = () => {
                 <div className="w-14 h-14 bg-yellow-100 rounded-xl flex items-center justify-center mx-auto mb-4">
                   <Users className="text-pink-700" size={28} />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">Expert Recruitment Team</h3>
-                <p className="text-gray-600 leading-relaxed">
+                <h3 className="text-xl font-bold text-white drop-shadow-lg mb-3">Expert Recruitment Team</h3>
+                <p className="text-gray-100 drop-shadow-md leading-relaxed">
                   Specialized panel recruitment professionals who source and verify niche audiences across industries and demographics.
                 </p>
               </CardContent>
@@ -230,8 +230,8 @@ export const AboutPage = () => {
                 <div className="w-14 h-14 bg-teal-100 rounded-xl flex items-center justify-center mx-auto mb-4">
                   <Cpu className="text-teal-600" size={28} />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">Advanced Technology</h3>
-                <p className="text-gray-600 leading-relaxed">
+                <h3 className="text-xl font-bold text-white drop-shadow-lg mb-3">Advanced Technology</h3>
+                <p className="text-gray-100 drop-shadow-md leading-relaxed">
                   Cutting-edge sampling platforms, AI-powered quality checks, and automated validation systems for superior accuracy.
                 </p>
               </CardContent>
@@ -244,8 +244,8 @@ export const AboutPage = () => {
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Global Panelist Network</h2>
-            <p className="text-lg text-gray-600">Connecting you with the right audience, anywhere in the world</p>
+            <h2 className="text-4xl font-bold text-white drop-shadow-lg mb-4">Our Global Panelist Network</h2>
+            <p className="text-lg text-gray-100 drop-shadow-md">Connecting you with the right audience, anywhere in the world</p>
           </div>
 
           {/* Stats Grid */}
@@ -258,8 +258,8 @@ export const AboutPage = () => {
                     <div className="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mx-auto mb-3">
                       <IconComponent className="text-pink-700" size={24} />
                     </div>
-                    <div className="text-3xl font-bold text-gray-900 mb-1">{stat.value}</div>
-                    <div className="text-sm text-gray-600">{stat.label}</div>
+                    <div className="text-3xl font-bold text-white drop-shadow-lg mb-1">{stat.value}</div>
+                    <div className="text-sm text-gray-100 drop-shadow-md">{stat.label}</div>
                   </CardContent>
                 </Card>
               );
@@ -269,29 +269,29 @@ export const AboutPage = () => {
           {/* Visual Representation */}
           <div className="bg-gradient-to-br from-yellow-50 to-pink-50 p-8 rounded-2xl border-2 border-gray-100 mb-8">
             <div className="text-center mb-6">
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">Truly Global Presence</h3>
-              <p className="text-gray-600">Our panelists span across continents, industries, and demographics</p>
+              <h3 className="text-2xl font-bold text-white drop-shadow-lg mb-2">Truly Global Presence</h3>
+              <p className="text-gray-100 drop-shadow-md">Our panelists span across continents, industries, and demographics</p>
             </div>
             <div className="grid md:grid-cols-5 gap-4 text-center">
               <div>
                 <div className="text-2xl font-bold text-blue-600 mb-1">35%</div>
-                <div className="text-sm text-gray-600">North America</div>
+                <div className="text-sm text-gray-100 drop-shadow-md">North America</div>
               </div>
               <div>
                 <div className="text-2xl font-bold text-green-600 mb-1">30%</div>
-                <div className="text-sm text-gray-600">Europe</div>
+                <div className="text-sm text-gray-100 drop-shadow-md">Europe</div>
               </div>
               <div>
                 <div className="text-2xl font-bold text-purple-600 mb-1">20%</div>
-                <div className="text-sm text-gray-600">Asia Pacific</div>
+                <div className="text-sm text-gray-100 drop-shadow-md">Asia Pacific</div>
               </div>
               <div>
                 <div className="text-2xl font-bold text-pink-700 mb-1">10%</div>
-                <div className="text-sm text-gray-600">Latin America</div>
+                <div className="text-sm text-gray-100 drop-shadow-md">Latin America</div>
               </div>
               <div>
                 <div className="text-2xl font-bold text-red-600 mb-1">5%</div>
-                <div className="text-sm text-gray-600">Middle East & Africa</div>
+                <div className="text-sm text-gray-100 drop-shadow-md">Middle East & Africa</div>
               </div>
             </div>
           </div>
@@ -307,11 +307,11 @@ export const AboutPage = () => {
       </section>
 
       {/* Leadership Team */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-yellow-50">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-transparent">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Meet Our Leadership Team</h2>
-            <p className="text-lg text-gray-600">Experienced professionals driving excellence</p>
+            <h2 className="text-4xl font-bold text-white drop-shadow-lg mb-4">Meet Our Leadership Team</h2>
+            <p className="text-lg text-gray-100 drop-shadow-md">Experienced professionals driving excellence</p>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
             {team.map((member, index) => (
@@ -322,9 +322,9 @@ export const AboutPage = () => {
                       <User className="text-pink-400" size={40} />
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-xl font-bold text-gray-900 mb-1">{member.name}</h3>
+                      <h3 className="text-xl font-bold text-white drop-shadow-lg mb-1">{member.name}</h3>
                       <p className="text-sm text-blue-600 font-semibold mb-3">{member.position}</p>
-                      <p className="text-gray-600 text-sm leading-relaxed italic">"{member.quote}"</p>
+                      <p className="text-gray-100 drop-shadow-md text-sm leading-relaxed italic">"{member.quote}"</p>
                     </div>
                   </div>
                 </CardContent>
@@ -337,10 +337,10 @@ export const AboutPage = () => {
       {/* CTA */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="container mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white drop-shadow-lg mb-6">
             Ready to Work Together?
           </h2>
-          <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-100 drop-shadow-md mb-8 max-w-2xl mx-auto">
             Let's discuss how we can support your research objectives
           </p>
           <Link to="/contact">
