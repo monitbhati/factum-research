@@ -102,7 +102,7 @@ export const ContactPage = () => {
         <div className="container mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
             {/* Contact Form */}
-            <Card className="border-2 border-gray-100">
+            <Card className="border-2 border-yellow-200 shadow-2xl bg-white/98 backdrop-blur-lg">
               <CardHeader>
                 <CardTitle className="text-2xl">Submit Inquiry</CardTitle>
                 <CardDescription className="text-base">Our team responds to all inquiries within 24 hours</CardDescription>
