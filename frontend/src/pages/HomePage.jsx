@@ -67,8 +67,8 @@ export const HomePage = () => {
               const IconComponent = iconMap[item.icon];
               return (
                 <div key={item.id} className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition-all border border-gray-100">
-                  <div className="w-14 h-14 bg-gradient-to-br from-slate-100 to-slate-200 rounded-xl flex items-center justify-center mb-6">
-                    <IconComponent className="text-slate-700" size={26} strokeWidth={2} />
+                  <div className="w-14 h-14 bg-gradient-to-br from-orange-100 to-red-100 rounded-xl flex items-center justify-center mb-6">
+                    <IconComponent className="text-orange-600" size={26} strokeWidth={2} />
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-3">{item.title}</h3>
                   <p className="text-sm text-gray-600 leading-relaxed">{item.description}</p>
@@ -79,7 +79,7 @@ export const HomePage = () => {
 
           <div className="text-center mt-12">
             <Link to="/about">
-              <Button size="lg" variant="outline" className="border-2 border-slate-800 text-slate-800 hover:bg-slate-50">
+              <Button size="lg" variant="outline" className="border-2 border-orange-600 text-orange-600 hover:bg-orange-50">
                 Learn More About Us
               </Button>
             </Link>
