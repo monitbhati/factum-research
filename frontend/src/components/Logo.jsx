@@ -3,77 +3,66 @@ import React from 'react';
 export const Logo = ({ className = '' }) => {
   return (
     <div className={`flex items-center ${className}`}>
-      <svg width="200" height="48" viewBox="0 0 200 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        {/* Intertwining F and R inspired by flowing swirls */}
+      <svg width="200" height="50" viewBox="0 0 200 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+        {/* Intertwining swirl logo inspired by Quirky - F and R forming elegant curves */}
         
-        {/* F - Yellow flowing curves */}
+        {/* Yellow swirl (representing F) - Upper flowing curve */}
         <path 
-          d="M 8 10 Q 12 8 16 10 Q 20 12 20 16 L 20 22 Q 20 26 16 28 Q 12 30 8 28 Q 4 26 4 22 L 4 16 Q 4 12 8 10 Z" 
+          d="M 6 25 Q 6 12 16 8 Q 26 4 32 12 Q 36 18 34 26" 
           fill="none" 
           stroke="#FDB913" 
-          strokeWidth="3.5" 
+          strokeWidth="4.5" 
           strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path 
-          d="M 4 16 Q 4 12 8 10 Q 12 8 16 10 L 20 12" 
+          d="M 34 26 Q 32 32 26 34 Q 20 36 16 32" 
           fill="none" 
           stroke="#FDB913" 
-          strokeWidth="3.5" 
+          strokeWidth="4.5" 
           strokeLinecap="round"
-        />
-        <path 
-          d="M 12 16 Q 14 16 16 18 Q 18 20 18 22" 
-          fill="none" 
-          stroke="#FDB913" 
-          strokeWidth="3.5" 
-          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         
-        {/* Main intertwining swirl - Yellow top part */}
+        {/* Magenta/Purple swirl (representing R) - Lower intertwining curve */}
         <path 
-          d="M 10 8 Q 18 6 24 10 Q 30 14 32 22 Q 34 30 30 36" 
-          fill="none" 
-          stroke="#FDB913" 
-          strokeWidth="4" 
-          strokeLinecap="round"
-        />
-        
-        {/* R - Magenta/Purple flowing curves intertwining with F */}
-        <path 
-          d="M 30 36 Q 26 40 20 40 Q 14 40 10 36 Q 6 32 6 26" 
+          d="M 16 32 Q 10 28 10 20 Q 10 12 16 10" 
           fill="none" 
           stroke="#C2185B" 
-          strokeWidth="4" 
+          strokeWidth="4.5" 
           strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path 
-          d="M 20 24 Q 24 24 28 26 Q 32 28 32 32 Q 32 36 28 38" 
+          d="M 16 10 Q 22 8 28 12 Q 32 16 32 22" 
           fill="none" 
           stroke="#C2185B" 
-          strokeWidth="3.5" 
+          strokeWidth="4.5" 
           strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path 
-          d="M 24 30 L 30 38" 
+          d="M 32 22 Q 32 28 28 32 Q 24 36 18 38" 
           fill="none" 
           stroke="#C2185B" 
-          strokeWidth="3.5" 
+          strokeWidth="4.5" 
           strokeLinecap="round"
+          strokeLinejoin="round"
         />
         
-        {/* Additional flowing connector */}
+        {/* Inner connecting curves for depth */}
         <path 
-          d="M 16 12 Q 20 16 24 18 Q 28 20 28 24" 
+          d="M 20 16 Q 24 16 26 20 Q 28 24 26 28" 
           fill="none" 
           stroke="#FDB913" 
-          strokeWidth="3" 
+          strokeWidth="3.5" 
           strokeLinecap="round"
-          opacity="0.7"
+          opacity="0.6"
         />
         
         {/* Company name */}
-        <text x="48" y="22" fontFamily="system-ui, -apple-system, sans-serif" fontSize="16" fontWeight="700" fill="#1e3a5f" letterSpacing="0.5">FACTUM</text>
-        <text x="48" y="36" fontFamily="system-ui, -apple-system, sans-serif" fontSize="10" fontWeight="600" fill="#C2185B" letterSpacing="1.8">RESEARCH</text>
+        <text x="50" y="23" fontFamily="system-ui, -apple-system, sans-serif" fontSize="16" fontWeight="700" fill="#1e3a5f" letterSpacing="0.5">FACTUM</text>
+        <text x="50" y="37" fontFamily="system-ui, -apple-system, sans-serif" fontSize="10" fontWeight="600" fill="#C2185B" letterSpacing="1.8">RESEARCH</text>
       </svg>
     </div>
   );
