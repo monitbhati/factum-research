@@ -28,7 +28,7 @@ export const Footer = () => {
               href="https://www.linkedin.com/company/factum-research" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-600 to-red-500 hover:from-orange-700 hover:to-red-600 text-white px-5 py-2.5 rounded-lg transition-all font-medium shadow-lg"
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-yellow-500 to-pink-700 hover:from-orange-700 hover:to-red-600 text-white px-5 py-2.5 rounded-lg transition-all font-medium shadow-lg"
             >
               <Linkedin size={20} />
               Follow us on LinkedIn
