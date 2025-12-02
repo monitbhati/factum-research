@@ -118,12 +118,50 @@ export const JoinUsPage = () => {
       <section className="pt-32 pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-50 to-white">
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto text-center">
+            <div className="inline-block px-4 py-2 bg-blue-100 rounded-full text-sm font-semibold text-blue-700 mb-4">
+              Your Voice Matters
+            </div>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-              Join Our Community
+              Join Our Global Panel
             </h1>
-            <p className="text-lg sm:text-xl text-gray-600 leading-relaxed">
-              Create an account to access exclusive research insights and connect with our team
+            <p className="text-lg sm:text-xl text-gray-600 leading-relaxed mb-4">
+              Turn your opinions into income. Share your thoughts on products, services, and trends while earning rewards from the comfort of your home.
             </p>
+            <div className="flex flex-wrap gap-6 justify-center mt-8 text-left max-w-3xl mx-auto">
+              <div className="flex items-start gap-3">
+                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+                  <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-gray-900">Earn Extra Income</h3>
+                  <p className="text-sm text-gray-600">Get paid for sharing your opinions</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0">
+                  <svg className="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-gray-900">Flexible Timing</h3>
+                  <p className="text-sm text-gray-600">Work on your own schedule</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                  <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-gray-900">Simple Surveys</h3>
+                  <p className="text-sm text-gray-600">Easy questions, no special skills needed</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
