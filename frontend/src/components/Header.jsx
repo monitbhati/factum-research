@@ -45,6 +45,14 @@ export const Header = () => {
             >
               Services
             </Link>
+            <Link 
+              to="/join-us" 
+              className={`font-medium transition-colors ${
+                isActive('/join-us') ? 'text-slate-900' : 'text-gray-700 hover:text-slate-900'
+              }`}
+            >
+              Join Us
+            </Link>
             <Link to="/contact">
               <Button className="bg-slate-800 hover:bg-slate-900 px-6">Contact</Button>
             </Link>
@@ -83,6 +91,13 @@ export const Header = () => {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Services
+              </Link>
+              <Link 
+                to="/join-us" 
+                className="text-left text-gray-700 hover:text-slate-900 transition-colors py-2 font-medium"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Join Us
               </Link>
               <Link to="/contact" onClick={() => setMobileMenuOpen(false)}>
                 <Button className="bg-slate-800 hover:bg-slate-900 w-full">Contact</Button>
