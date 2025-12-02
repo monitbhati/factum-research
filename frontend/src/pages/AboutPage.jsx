@@ -306,8 +306,8 @@ export const AboutPage = () => {
               <Card key={index} className="border-2 border-gray-100">
                 <CardContent className="pt-8 pb-8">
                   <div className="flex items-start gap-4">
-                    <div className="w-20 h-20 bg-slate-200 rounded-full flex items-center justify-center flex-shrink-0">
-                      <User className="text-slate-400" size={40} />
+                    <div className="w-20 h-20 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0">
+                      <User className="text-orange-400" size={40} />
                     </div>
                     <div className="flex-1">
                       <h3 className="text-xl font-bold text-gray-900 mb-1">{member.name}</h3>
