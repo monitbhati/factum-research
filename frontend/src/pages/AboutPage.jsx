@@ -196,42 +196,42 @@ export const AboutPage = () => {
       </section>
 
       {/* Sample Quality */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-yellow-50 to-white">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-transparent">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-white drop-shadow-lg mb-4">What Makes Our Sample Quality Better</h2>
             <p className="text-lg text-gray-100 drop-shadow-md">Three pillars of excellence</p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
-            <Card className="border-2 border-gray-100 hover:shadow-lg transition-shadow">
+            <Card className="border-2 border-pink-300 hover:shadow-lg transition-shadow bg-white/95 backdrop-blur-md">
               <CardContent className="pt-8 pb-8 text-center">
                 <div className="w-14 h-14 bg-red-100 rounded-xl flex items-center justify-center mx-auto mb-4">
                   <Shield className="text-red-600" size={28} />
                 </div>
-                <h3 className="text-xl font-bold text-white drop-shadow-lg mb-3">Rigorous QC Protocols</h3>
-                <p className="text-gray-100 drop-shadow-md leading-relaxed">
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Rigorous QC Protocols</h3>
+                <p className="text-gray-700 leading-relaxed">
                   Real-time quality monitoring, behavioral validation, and fraud detection systems ensure pristine data integrity.
                 </p>
               </CardContent>
             </Card>
-            <Card className="border-2 border-gray-100 hover:shadow-lg transition-shadow">
+            <Card className="border-2 border-yellow-300 hover:shadow-lg transition-shadow bg-white/95 backdrop-blur-md">
               <CardContent className="pt-8 pb-8 text-center">
                 <div className="w-14 h-14 bg-yellow-100 rounded-xl flex items-center justify-center mx-auto mb-4">
                   <Users className="text-pink-700" size={28} />
                 </div>
-                <h3 className="text-xl font-bold text-white drop-shadow-lg mb-3">Expert Recruitment Team</h3>
-                <p className="text-gray-100 drop-shadow-md leading-relaxed">
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Expert Recruitment Team</h3>
+                <p className="text-gray-700 leading-relaxed">
                   Specialized panel recruitment professionals who source and verify niche audiences across industries and demographics.
                 </p>
               </CardContent>
             </Card>
-            <Card className="border-2 border-gray-100 hover:shadow-lg transition-shadow">
+            <Card className="border-2 border-pink-300 hover:shadow-lg transition-shadow bg-white/95 backdrop-blur-md">
               <CardContent className="pt-8 pb-8 text-center">
                 <div className="w-14 h-14 bg-teal-100 rounded-xl flex items-center justify-center mx-auto mb-4">
                   <Cpu className="text-teal-600" size={28} />
                 </div>
-                <h3 className="text-xl font-bold text-white drop-shadow-lg mb-3">Advanced Technology</h3>
-                <p className="text-gray-100 drop-shadow-md leading-relaxed">
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Advanced Technology</h3>
+                <p className="text-gray-700 leading-relaxed">
                   Cutting-edge sampling platforms, AI-powered quality checks, and automated validation systems for superior accuracy.
                 </p>
               </CardContent>
