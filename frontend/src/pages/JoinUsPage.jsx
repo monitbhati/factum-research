@@ -358,7 +358,7 @@ export const JoinUsPage = () => {
               {/* Login Tab */}
               <TabsContent value="login">
                 <Card className="border-2 border-gray-100 shadow-lg">
-                  <CardHeader className="bg-gradient-to-r from-slate-50 to-gray-50 border-b border-gray-100">
+                  <CardHeader className="bg-gradient-to-r from-orange-50 to-red-50 border-b border-gray-100">
                     <CardTitle className="text-2xl">Welcome Back, Panelist!</CardTitle>
                     <CardDescription className="text-base">Login to check available surveys and track your earnings</CardDescription>
                     <div className="mt-4 flex items-center gap-2 text-sm text-gray-600">
