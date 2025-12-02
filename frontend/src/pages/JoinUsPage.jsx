@@ -166,8 +166,34 @@ export const JoinUsPage = () => {
         </div>
       </section>
 
+      {/* Benefits Section */}
+      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-white border-y border-gray-200">
+        <div className="container mx-auto">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-3xl font-bold text-gray-900 text-center mb-8">Why Join Our Panel?</h2>
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="text-center p-6 bg-gradient-to-br from-green-50 to-green-100 rounded-xl">
+                <div className="text-4xl font-bold text-green-600 mb-2">Earn Money</div>
+                <p className="text-gray-700 font-medium mb-2">Get Paid Per Survey</p>
+                <p className="text-sm text-gray-600">Answer simple questions and receive payments directly to your account</p>
+              </div>
+              <div className="text-center p-6 bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl">
+                <div className="text-4xl font-bold text-blue-600 mb-2">Flexibility</div>
+                <p className="text-gray-700 font-medium mb-2">Work Anytime, Anywhere</p>
+                <p className="text-sm text-gray-600">Complete surveys from your phone, tablet, or computer at your convenience</p>
+              </div>
+              <div className="text-center p-6 bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl">
+                <div className="text-4xl font-bold text-purple-600 mb-2">Impact</div>
+                <p className="text-gray-700 font-medium mb-2">Shape Products & Services</p>
+                <p className="text-sm text-gray-600">Your opinions help companies improve their offerings and make better decisions</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Auth Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-50">
         <div className="container mx-auto">
           <div className="max-w-2xl mx-auto">
             <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
