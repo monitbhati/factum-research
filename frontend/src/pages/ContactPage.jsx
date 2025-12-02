@@ -69,27 +69,27 @@ export const ContactPage = () => {
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
               We'd Love to Hear From You
             </h1>
-            <p className="text-lg sm:text-xl text-gray-700 leading-relaxed mb-8">
+            <p className="text-lg sm:text-xl text-gray-100 leading-relaxed mb-8 drop-shadow-md">
               Have a research project in mind? Our team of experts is ready to help you gather the insights that matter most.
             </p>
             <div className="flex flex-wrap gap-6 justify-center">
-              <div className="flex items-center gap-2 bg-white px-6 py-3 rounded-lg shadow-sm">
-                <svg className="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+              <div className="flex items-center gap-2 bg-white/95 backdrop-blur-sm px-6 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all">
+                <svg className="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
                 </svg>
-                <span className="text-sm font-medium text-gray-700">Quick Response</span>
+                <span className="text-sm font-semibold text-gray-800">Quick Response</span>
               </div>
-              <div className="flex items-center gap-2 bg-white px-6 py-3 rounded-lg shadow-sm">
-                <svg className="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <span className="text-sm font-medium text-gray-700">24/7 Support</span>
-              </div>
-              <div className="flex items-center gap-2 bg-white px-6 py-3 rounded-lg shadow-sm">
+              <div className="flex items-center gap-2 bg-white/95 backdrop-blur-sm px-6 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all">
                 <svg className="w-5 h-5 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
-                <span className="text-sm font-medium text-gray-700">Free Consultation</span>
+                <span className="text-sm font-semibold text-gray-800">24/7 Support</span>
+              </div>
+              <div className="flex items-center gap-2 bg-white/95 backdrop-blur-sm px-6 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all">
+                <svg className="w-5 h-5 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+                <span className="text-sm font-semibold text-gray-800">Free Consultation</span>
               </div>
             </div>
           </div>
