@@ -166,7 +166,7 @@ export const ServicesPage = () => {
             Let's discuss which research solution best fits your needs
           </p>
           <Link to="/contact">
-            <Button size="lg" className="bg-slate-800 hover:bg-slate-900 text-lg px-8 h-14">
+            <Button size="lg" className="bg-gradient-to-r from-orange-600 to-red-500 hover:from-orange-700 hover:to-red-600 text-lg px-8 h-14">
               Contact Us Today
             </Button>
           </Link>
