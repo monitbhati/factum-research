@@ -33,19 +33,19 @@ export const HomePage = () => {
           {/* Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-20 max-w-5xl mx-auto">
             <div className="bg-white p-6 rounded-2xl shadow-sm border border-orange-100 text-center hover:shadow-md transition-shadow">
-              <div className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-orange-600 to-red-500 bg-clip-text text-transparent mb-2">{mockData.stats.projectsCompleted}</div>
+              <div className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-yellow-500 to-pink-700 bg-clip-text text-transparent mb-2">{mockData.stats.projectsCompleted}</div>
               <div className="text-sm text-gray-600 font-medium">Strategic Projects</div>
             </div>
             <div className="bg-white p-6 rounded-2xl shadow-sm border border-orange-100 text-center hover:shadow-md transition-shadow">
-              <div className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-orange-600 to-red-500 bg-clip-text text-transparent mb-2">{mockData.stats.industriesServed}</div>
+              <div className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-yellow-500 to-pink-700 bg-clip-text text-transparent mb-2">{mockData.stats.industriesServed}</div>
               <div className="text-sm text-gray-600 font-medium">Industry Sectors</div>
             </div>
             <div className="bg-white p-6 rounded-2xl shadow-sm border border-orange-100 text-center hover:shadow-md transition-shadow">
-              <div className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-orange-600 to-red-500 bg-clip-text text-transparent mb-2">{mockData.stats.clientSatisfaction}</div>
+              <div className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-yellow-500 to-pink-700 bg-clip-text text-transparent mb-2">{mockData.stats.clientSatisfaction}</div>
               <div className="text-sm text-gray-600 font-medium">Client Retention</div>
             </div>
             <div className="bg-white p-6 rounded-2xl shadow-sm border border-orange-100 text-center hover:shadow-md transition-shadow">
-              <div className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-orange-600 to-red-500 bg-clip-text text-transparent mb-2">{mockData.stats.yearsExperience}</div>
+              <div className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-yellow-500 to-pink-700 bg-clip-text text-transparent mb-2">{mockData.stats.yearsExperience}</div>
               <div className="text-sm text-gray-600 font-medium">Years Excellence</div>
             </div>
           </div>
@@ -99,7 +99,7 @@ export const HomePage = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/contact">
-                <Button size="lg" className="bg-gradient-to-r from-orange-600 to-red-500 hover:from-orange-700 hover:to-red-600 text-lg px-8 h-14">
+                <Button size="lg" className="bg-gradient-to-r from-yellow-500 to-pink-700 hover:from-orange-700 hover:to-red-600 text-lg px-8 h-14">
                   Initiate Consultation <ArrowRight className="ml-2" size={20} />
                 </Button>
               </Link>
