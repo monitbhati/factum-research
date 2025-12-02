@@ -101,13 +101,13 @@ export const AboutPage = () => {
             <p className="text-lg text-gray-100 drop-shadow-md">Specialized capabilities that set us apart</p>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
-            <Card className="border-2 border-gray-100">
+            <Card className="border-2 border-yellow-300 bg-white/95 backdrop-blur-md">
               <CardContent className="pt-8 pb-8">
                 <div className="w-14 h-14 bg-yellow-100 rounded-xl flex items-center justify-center mb-6">
                   <Users className="text-blue-600" size={28} />
                 </div>
-                <h3 className="text-2xl font-bold text-white drop-shadow-lg mb-3">Online Sampling</h3>
-                <p className="text-gray-100 drop-shadow-md mb-4 leading-relaxed">
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">Online Sampling</h3>
+                <p className="text-gray-700 mb-4 leading-relaxed">
                   Comprehensive online sampling solutions across diverse audience segments, delivering precise targeting and high-quality respondent engagement.
                 </p>
                 <ul className="space-y-2">
@@ -127,13 +127,13 @@ export const AboutPage = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-2 border-gray-100">
+            <Card className="border-2 border-pink-300 bg-white/95 backdrop-blur-md">
               <CardContent className="pt-8 pb-8">
                 <div className="w-14 h-14 bg-purple-100 rounded-xl flex items-center justify-center mb-6">
                   <Target className="text-purple-600" size={28} />
                 </div>
-                <h3 className="text-2xl font-bold text-white drop-shadow-lg mb-3">Qualitative Research</h3>
-                <p className="text-gray-100 drop-shadow-md mb-4 leading-relaxed">
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">Qualitative Research</h3>
+                <p className="text-gray-700 mb-4 leading-relaxed">
                   Deep-dive qualitative methodologies that uncover insights beyond numbers, revealing the 'why' behind consumer behaviors and market trends.
                 </p>
                 <ul className="space-y-2">
