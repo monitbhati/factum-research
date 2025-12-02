@@ -47,17 +47,29 @@ export const AboutPage = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-white">
-      <Header />
+    <div className="min-h-screen bg-white relative">
+      {/* Full Page Background Image */}
+      <div className="fixed inset-0 z-0">
+        <img 
+          src="https://images.pexels.com/photos/7947756/pexels-photo-7947756.jpeg" 
+          alt="Business Analytics"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-purple-900/90 via-pink-900/85 to-yellow-900/85"></div>
+      </div>
+      
+      <div className="relative z-10">
+        <Header />
 
-      {/* Page Header */}
-      <section className="pt-32 pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-yellow-50 to-white">
-        <div className="container mx-auto">
-          <div className="max-w-4xl mx-auto text-center">
-            <p className="text-lg sm:text-xl text-gray-600 leading-relaxed">
-              A premier market research consultancy transforming complex market dynamics into strategic clarity through precision methodologies and actionable intelligence.
-            </p>
-          </div>
+        {/* Page Header */}
+        <section className="pt-32 pb-16 px-4 sm:px-6 lg:px-8">
+          <div className="container mx-auto">
+            <div className="max-w-4xl mx-auto text-center">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-lg">About Us</h1>
+              <p className="text-lg sm:text-xl text-gray-100 leading-relaxed drop-shadow-md">
+                A premier market research consultancy transforming complex market dynamics into strategic clarity through precision methodologies and actionable intelligence.
+              </p>
+            </div>
         </div>
       </section>
 
