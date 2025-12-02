@@ -145,24 +145,24 @@ export const JoinUsPage = () => {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900">Earn Extra Income</h3>
-                  <p className="text-sm text-gray-600">Get paid for sharing your opinions</p>
+                  <h3 className="font-semibold text-white drop-shadow-md">Earn Extra Income</h3>
+                  <p className="text-sm text-gray-200 drop-shadow">Get paid for sharing your opinions</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0">
-                  <svg className="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                <div className="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900">Flexible Timing</h3>
-                  <p className="text-sm text-gray-600">Work on your own schedule</p>
+                  <h3 className="font-semibold text-white drop-shadow-md">Flexible Timing</h3>
+                  <p className="text-sm text-gray-200 drop-shadow">Work on your own schedule</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <div className="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center flex-shrink-0">
-                  <svg className="w-6 h-6 text-pink-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="w-12 h-12 bg-pink-500 rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
