@@ -184,7 +184,7 @@ export const AboutPage = () => {
       </section>
 
       {/* Sample Quality */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-50 to-white">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-orange-50 to-white">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">What Makes Our Sample Quality Better</h2>
