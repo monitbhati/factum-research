@@ -115,16 +115,26 @@ export const JoinUsPage = () => {
       <Header />
 
       {/* Page Header */}
-      <section className="pt-32 pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-yellow-50 to-white">
-        <div className="container mx-auto">
+      <section className="relative pt-32 pb-16 px-4 sm:px-6 lg:px-8 min-h-[550px] flex items-center">
+        {/* Background Image with Overlay */}
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="https://images.unsplash.com/photo-1758873269317-51888e824b28?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzd8MHwxfHNlYXJjaHwxfHxkaXZlcnNlJTIwcGVvcGxlJTIwbWVldGluZ3xlbnwwfHx8fDE3NjQ3MTcxNzd8MA&ixlib=rb-4.1.0&q=85" 
+            alt="Diverse Team"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-purple-900/90 via-pink-900/85 to-yellow-900/80"></div>
+        </div>
+        
+        <div className="container mx-auto relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-block px-4 py-2 bg-yellow-100 rounded-full text-sm font-semibold text-pink-800 mb-4">
+            <div className="inline-block px-5 py-2 bg-yellow-400/90 backdrop-blur-sm rounded-full text-sm font-bold text-purple-900 mb-4 shadow-lg">
               Your Voice Matters
             </div>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
               Join Our Global Panel
             </h1>
-            <p className="text-lg sm:text-xl text-gray-600 leading-relaxed mb-4">
+            <p className="text-lg sm:text-xl text-gray-100 leading-relaxed mb-4 drop-shadow-md">
               Turn your opinions into income. Share your thoughts on products, services, and trends while earning rewards from the comfort of your home.
             </p>
             <div className="flex flex-wrap gap-6 justify-center mt-8 text-left max-w-3xl mx-auto">
