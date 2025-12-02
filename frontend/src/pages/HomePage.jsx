@@ -15,20 +15,22 @@ const iconMap = {
 
 export const HomePage = () => {
   return (
-    <div className="min-h-screen bg-white">
-      <Header />
+    <div className="min-h-screen bg-white relative">
+      {/* Full Page Background Image */}
+      <div className="fixed inset-0 z-0">
+        <img 
+          src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHwzfHxkYXRhJTIwYW5hbHl0aWNzfGVufDB8fHx8MTc2NDcxNzE2Nnww&ixlib=rb-4.1.0&q=85" 
+          alt="Data Analytics"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-purple-900/90 via-pink-900/85 to-yellow-900/75"></div>
+      </div>
+      
+      <div className="relative z-10">
+        <Header />
 
-      {/* Hero Section */}
-      <section className="relative pt-32 pb-24 px-4 sm:px-6 lg:px-8 min-h-[600px] flex items-center">
-        {/* Background Image with Overlay */}
-        <div className="absolute inset-0 z-0">
-          <img 
-            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHwzfHxkYXRhJTIwYW5hbHl0aWNzfGVufDB8fHx8MTc2NDcxNzE2Nnww&ixlib=rb-4.1.0&q=85" 
-            alt="Data Analytics"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-purple-900/85 via-pink-900/75 to-yellow-900/70"></div>
-        </div>
+        {/* Hero Section */}
+        <section className="pt-32 pb-24 px-4 sm:px-6 lg:px-8 min-h-[600px] flex items-center">
         
         <div className="container mx-auto relative z-10">
           <div className="max-w-4xl mx-auto text-center">
