@@ -19,13 +19,23 @@ export const HomePage = () => {
       <Header />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-yellow-50 via-white to-white">
-        <div className="container mx-auto">
+      <section className="relative pt-32 pb-24 px-4 sm:px-6 lg:px-8 min-h-[600px] flex items-center">
+        {/* Background Image with Overlay */}
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHwzfHxkYXRhJTIwYW5hbHl0aWNzfGVufDB8fHx8MTc2NDcxNzE2Nnww&ixlib=rb-4.1.0&q=85" 
+            alt="Data Analytics"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-purple-900/85 via-pink-900/75 to-yellow-900/70"></div>
+        </div>
+        
+        <div className="container mx-auto relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
               {mockData.company.tagline}
             </h1>
-            <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg sm:text-xl text-gray-100 max-w-3xl mx-auto leading-relaxed drop-shadow-md">
               {mockData.company.description}
             </p>
           </div>
