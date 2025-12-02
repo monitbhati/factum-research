@@ -98,23 +98,33 @@ export const HomePage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-yellow-50 to-pink-50">
-        <div className="container mx-auto">
+      <section className="relative py-32 px-4 sm:px-6 lg:px-8 min-h-[500px] flex items-center">
+        {/* Background Image with Overlay */}
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="https://images.unsplash.com/photo-1666875753105-c63a6f3bdc86?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHwxfHxkYXRhJTIwYW5hbHl0aWNzfGVufDB8fHx8MTc2NDcxNzE2Nnww&ixlib=rb-4.1.0&q=85" 
+            alt="Data Visualization"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-yellow-900/80 via-pink-900/75 to-purple-900/80"></div>
+        </div>
+        
+        <div className="container mx-auto relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6 drop-shadow-lg">
               Ready to Transform Your Market Intelligence?
             </h2>
-            <p className="text-lg text-gray-600 mb-10 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-100 mb-10 max-w-2xl mx-auto drop-shadow-md">
               Connect with our research strategists to explore how we can support your intelligence requirements
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/contact">
-                <Button size="lg" className="bg-gradient-to-r from-yellow-500 to-pink-700 hover:from-orange-700 hover:to-red-600 text-lg px-8 h-14">
+                <Button size="lg" className="bg-gradient-to-r from-yellow-500 to-pink-700 hover:from-yellow-400 hover:to-pink-600 text-lg px-8 h-14 shadow-2xl">
                   Initiate Consultation <ArrowRight className="ml-2" size={20} />
                 </Button>
               </Link>
               <Link to="/services">
-                <Button size="lg" variant="outline" className="text-lg px-8 h-14 border-2 border-yellow-600 text-yellow-600 hover:bg-white">
+                <Button size="lg" variant="outline" className="text-lg px-8 h-14 border-2 border-white text-white hover:bg-white/20 backdrop-blur-sm">
                   Explore Capabilities
                 </Button>
               </Link>
