@@ -286,7 +286,7 @@ export const AboutPage = () => {
 
           <div className="text-center">
             <Link to="/services">
-              <Button size="lg" className="bg-slate-800 hover:bg-slate-900">
+              <Button size="lg" className="bg-gradient-to-r from-orange-600 to-red-500 hover:from-orange-700 hover:to-red-600">
                 Learn More About Our Panel Reach <ArrowRight className="ml-2" size={20} />
               </Button>
             </Link>
