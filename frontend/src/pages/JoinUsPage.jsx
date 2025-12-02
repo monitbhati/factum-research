@@ -216,7 +216,7 @@ export const JoinUsPage = () => {
                     <CardDescription className="text-base">
                       Join thousands earning extra income by sharing their opinions. Simple registration, verified profiles get priority access to high-paying surveys!
                     </CardDescription>
-                    <div className="mt-4 bg-blue-600 text-white px-4 py-3 rounded-lg">
+                    <div className="mt-4 bg-gradient-to-r from-orange-600 to-red-500 text-white px-4 py-3 rounded-lg">
                       <p className="text-sm font-semibold text-center">
                         ✨ Start earning within 24 hours of profile approval
                       </p>
