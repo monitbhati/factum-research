@@ -184,10 +184,17 @@ export const JoinUsPage = () => {
 
               {/* Signup Tab */}
               <TabsContent value="signup">
-                <Card className="border-2 border-gray-100">
-                  <CardHeader>
-                    <CardTitle className="text-2xl">Create Your Account</CardTitle>
-                    <CardDescription className="text-base">Fill in your details to get started</CardDescription>
+                <Card className="border-2 border-blue-100 shadow-lg">
+                  <CardHeader className="bg-gradient-to-r from-blue-50 to-purple-50 border-b border-blue-100">
+                    <CardTitle className="text-2xl">Become a Panelist Today</CardTitle>
+                    <CardDescription className="text-base">
+                      Join thousands earning extra income by sharing their opinions. Simple registration, verified profiles get priority access to high-paying surveys!
+                    </CardDescription>
+                    <div className="mt-4 bg-blue-600 text-white px-4 py-3 rounded-lg">
+                      <p className="text-sm font-semibold text-center">
+                        ✨ Start earning within 24 hours of profile approval
+                      </p>
+                    </div>
                   </CardHeader>
                   <CardContent>
                     <form onSubmit={handleSignup} className="space-y-5">
