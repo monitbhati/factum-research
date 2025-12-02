@@ -331,10 +331,16 @@ export const JoinUsPage = () => {
 
               {/* Login Tab */}
               <TabsContent value="login">
-                <Card className="border-2 border-gray-100">
-                  <CardHeader>
-                    <CardTitle className="text-2xl">Welcome Back</CardTitle>
-                    <CardDescription className="text-base">Login to access your account</CardDescription>
+                <Card className="border-2 border-gray-100 shadow-lg">
+                  <CardHeader className="bg-gradient-to-r from-slate-50 to-gray-50 border-b border-gray-100">
+                    <CardTitle className="text-2xl">Welcome Back, Panelist!</CardTitle>
+                    <CardDescription className="text-base">Login to check available surveys and track your earnings</CardDescription>
+                    <div className="mt-4 flex items-center gap-2 text-sm text-gray-600">
+                      <svg className="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                      <span>New surveys available daily</span>
+                    </div>
                   </CardHeader>
                   <CardContent>
                     <form onSubmit={handleLogin} className="space-y-5">
