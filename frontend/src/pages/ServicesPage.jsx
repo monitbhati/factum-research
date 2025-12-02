@@ -137,47 +137,47 @@ export const ServicesPage = () => {
         </div>
       </section>
 
-      {/* Why Choose Our Services */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-yellow-50">
-        <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Choose Our Services</h2>
-            <p className="text-lg text-gray-600">Quality, expertise, and reliability in every project</p>
+        {/* Why Choose Our Services */}
+        <section className="py-20 px-4 sm:px-6 lg:px-8">
+          <div className="container mx-auto max-w-6xl">
+            <div className="text-center mb-12">
+              <h2 className="text-4xl font-bold text-white mb-4 drop-shadow-lg">Why Choose Our Services</h2>
+              <p className="text-lg text-gray-100 drop-shadow-md">Quality, expertise, and reliability in every project</p>
+            </div>
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="bg-white/95 backdrop-blur-md p-8 rounded-2xl border border-yellow-200 shadow-xl">
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Quality Assurance</h3>
+                <p className="text-gray-700 leading-relaxed">
+                  Multi-layered validation systems ensure data integrity at every touchpoint, delivering reliable and accurate results you can trust.
+                </p>
+              </div>
+              <div className="bg-white/95 backdrop-blur-md p-8 rounded-2xl border border-yellow-200 shadow-xl">
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Expert Team</h3>
+                <p className="text-gray-700 leading-relaxed">
+                  Experienced research professionals with deep industry knowledge and methodological expertise across all service areas.
+                </p>
+              </div>
+              <div className="bg-white/95 backdrop-blur-md p-8 rounded-2xl border border-yellow-200 shadow-xl">
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Custom Solutions</h3>
+                <p className="text-gray-700 leading-relaxed">
+                  Tailored research methodologies designed specifically for your unique business challenges and objectives.
+                </p>
+              </div>
+            </div>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-2xl border border-gray-200">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Quality Assurance</h3>
-              <p className="text-gray-600 leading-relaxed">
-                Multi-layered validation systems ensure data integrity at every touchpoint, delivering reliable and accurate results you can trust.
-              </p>
-            </div>
-            <div className="bg-white p-8 rounded-2xl border border-gray-200">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Expert Team</h3>
-              <p className="text-gray-600 leading-relaxed">
-                Experienced research professionals with deep industry knowledge and methodological expertise across all service areas.
-              </p>
-            </div>
-            <div className="bg-white p-8 rounded-2xl border border-gray-200">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Custom Solutions</h3>
-              <p className="text-gray-600 leading-relaxed">
-                Tailored research methodologies designed specifically for your unique business challenges and objectives.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      {/* CTA */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
-        <div className="container mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
-            Ready to Get Started?
-          </h2>
-          <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-            Let's discuss which research solution best fits your needs
-          </p>
-          <Link to="/contact">
-            <Button size="lg" className="bg-gradient-to-r from-yellow-500 to-pink-700 hover:from-orange-700 hover:to-red-600 text-lg px-8 h-14">
+        {/* CTA */}
+        <section className="py-20 px-4 sm:px-6 lg:px-8">
+          <div className="container mx-auto text-center">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6 drop-shadow-lg">
+              Ready to Get Started?
+            </h2>
+            <p className="text-lg text-gray-100 mb-8 max-w-2xl mx-auto drop-shadow-md">
+              Let's discuss which research solution best fits your needs
+            </p>
+            <Link to="/contact">
+              <Button size="lg" className="bg-gradient-to-r from-yellow-500 to-pink-700 hover:from-yellow-400 hover:to-pink-600 text-lg px-8 h-14 shadow-2xl">
               Contact Us Today
             </Button>
           </Link>
