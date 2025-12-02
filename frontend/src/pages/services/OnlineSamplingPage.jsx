@@ -49,7 +49,7 @@ export const OnlineSamplingPage = () => {
       </section>
 
       {/* Overview */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">What is Online Sampling?</h2>
