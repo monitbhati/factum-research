@@ -48,7 +48,7 @@ export const QualitativePage = () => {
       </section>
 
       {/* Overview */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 ">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">What is Qualitative Research?</h2>
@@ -60,7 +60,7 @@ export const QualitativePage = () => {
       </section>
 
       {/* Research Methods */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-50">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 ">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">Our Qualitative Methods</h2>
           <div className="grid md:grid-cols-3 gap-8 mb-12">
@@ -152,7 +152,7 @@ export const QualitativePage = () => {
       </section>
 
       {/* Our Approach */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 ">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">Our Qualitative Approach</h2>
           <div className="grid md:grid-cols-2 gap-8">
@@ -200,7 +200,7 @@ export const QualitativePage = () => {
       </section>
 
       {/* Process */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-50">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 ">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">Our Qualitative Research Process</h2>
           <div className="space-y-6">
@@ -244,23 +244,23 @@ export const QualitativePage = () => {
       </section>
 
       {/* When to Use Qualitative */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 ">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">When to Choose Qualitative Research</h2>
           <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-slate-50 p-6 rounded-xl border border-slate-200">
+            <div className=" p-6 rounded-xl border border-slate-200">
               <h4 className="font-bold text-gray-900 mb-2">Exploratory Research</h4>
               <p className="text-gray-600 text-sm">Understanding new markets, emerging trends, or unexplored consumer territories</p>
             </div>
-            <div className="bg-slate-50 p-6 rounded-xl border border-slate-200">
+            <div className=" p-6 rounded-xl border border-slate-200">
               <h4 className="font-bold text-gray-900 mb-2">Understanding "Why"</h4>
               <p className="text-gray-600 text-sm">Uncovering motivations, emotions, and decision-making processes behind behaviors</p>
             </div>
-            <div className="bg-slate-50 p-6 rounded-xl border border-slate-200">
+            <div className=" p-6 rounded-xl border border-slate-200">
               <h4 className="font-bold text-gray-900 mb-2">Concept Testing</h4>
               <p className="text-gray-600 text-sm">Evaluating new products, messaging, or ideas with rich feedback and reactions</p>
             </div>
-            <div className="bg-slate-50 p-6 rounded-xl border border-slate-200">
+            <div className=" p-6 rounded-xl border border-slate-200">
               <h4 className="font-bold text-gray-900 mb-2">Complex Topics</h4>
               <p className="text-gray-600 text-sm">Exploring sensitive subjects or complicated issues requiring nuanced discussion</p>
             </div>
@@ -269,7 +269,7 @@ export const QualitativePage = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-50">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 ">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
             Ready to Uncover Deeper Insights?
@@ -284,7 +284,7 @@ export const QualitativePage = () => {
               </Button>
             </Link>
             <Link to="/services">
-              <Button size="lg" variant="outline" className="text-lg px-8 h-14 border-2 border-slate-800 text-slate-800 hover:bg-white">
+              <Button size="lg" variant="outline" className="text-lg px-8 h-14 border-2 border-slate-800 text-slate-800 hover:">
                 View All Services
               </Button>
             </Link>

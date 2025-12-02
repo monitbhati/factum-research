@@ -49,7 +49,7 @@ export const SurveyDesigningPage = () => {
       </section>
 
       {/* Overview */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 ">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">What is Survey Designing?</h2>
@@ -61,7 +61,7 @@ export const SurveyDesigningPage = () => {
       </section>
 
       {/* Our Design Approach */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-50">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 ">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">Our Survey Design Expertise</h2>
           <div className="grid md:grid-cols-2 gap-8">
@@ -181,7 +181,7 @@ export const SurveyDesigningPage = () => {
       </section>
 
       {/* Design Principles */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 ">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">Our Design Principles</h2>
           <div className="grid md:grid-cols-3 gap-8">
@@ -217,7 +217,7 @@ export const SurveyDesigningPage = () => {
       </section>
 
       {/* Process */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-50">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 ">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">Our Survey Design Process</h2>
           <div className="space-y-6">
@@ -261,31 +261,31 @@ export const SurveyDesigningPage = () => {
       </section>
 
       {/* Question Types */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 ">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">Question Types We Design</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="bg-slate-50 p-6 rounded-xl border border-slate-200">
+            <div className=" p-6 rounded-xl border border-slate-200">
               <h4 className="font-bold text-gray-900 mb-2">Multiple Choice</h4>
               <p className="text-gray-600 text-sm">Single or multi-select options for categorical data</p>
             </div>
-            <div className="bg-slate-50 p-6 rounded-xl border border-slate-200">
+            <div className=" p-6 rounded-xl border border-slate-200">
               <h4 className="font-bold text-gray-900 mb-2">Rating Scales</h4>
               <p className="text-gray-600 text-sm">Likert, semantic differential, and numeric scales</p>
             </div>
-            <div className="bg-slate-50 p-6 rounded-xl border border-slate-200">
+            <div className=" p-6 rounded-xl border border-slate-200">
               <h4 className="font-bold text-gray-900 mb-2">Open-Ended</h4>
               <p className="text-gray-600 text-sm">Text responses for qualitative insights</p>
             </div>
-            <div className="bg-slate-50 p-6 rounded-xl border border-slate-200">
+            <div className=" p-6 rounded-xl border border-slate-200">
               <h4 className="font-bold text-gray-900 mb-2">Matrix Questions</h4>
               <p className="text-gray-600 text-sm">Efficient multi-item rating grids</p>
             </div>
-            <div className="bg-slate-50 p-6 rounded-xl border border-slate-200">
+            <div className=" p-6 rounded-xl border border-slate-200">
               <h4 className="font-bold text-gray-900 mb-2">Ranking Questions</h4>
               <p className="text-gray-600 text-sm">Drag-and-drop or numbered preference ranking</p>
             </div>
-            <div className="bg-slate-50 p-6 rounded-xl border border-slate-200">
+            <div className=" p-6 rounded-xl border border-slate-200">
               <h4 className="font-bold text-gray-900 mb-2">MaxDiff & Conjoint</h4>
               <p className="text-gray-600 text-sm">Advanced trade-off analysis designs</p>
             </div>
@@ -294,7 +294,7 @@ export const SurveyDesigningPage = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-50">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 ">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
             Ready to Create a High-Quality Survey?
@@ -309,7 +309,7 @@ export const SurveyDesigningPage = () => {
               </Button>
             </Link>
             <Link to="/services">
-              <Button size="lg" variant="outline" className="text-lg px-8 h-14 border-2 border-slate-800 text-slate-800 hover:bg-white">
+              <Button size="lg" variant="outline" className="text-lg px-8 h-14 border-2 border-slate-800 text-slate-800 hover:">
                 View All Services
               </Button>
             </Link>

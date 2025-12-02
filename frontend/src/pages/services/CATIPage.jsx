@@ -49,7 +49,7 @@ export const CATIPage = () => {
       </section>
 
       {/* Overview */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 ">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">What is CATI?</h2>
@@ -61,7 +61,7 @@ export const CATIPage = () => {
       </section>
 
       {/* Why Choose CATI */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-50">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 ">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">Why Choose CATI?</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -98,7 +98,7 @@ export const CATIPage = () => {
       </section>
 
       {/* Our CATI Capabilities */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 ">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">Our CATI Capabilities</h2>
           <div className="grid md:grid-cols-2 gap-8">
@@ -218,7 +218,7 @@ export const CATIPage = () => {
       </section>
 
       {/* Process */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-50">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 ">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">Our CATI Process</h2>
           <div className="space-y-6">
@@ -262,23 +262,23 @@ export const CATIPage = () => {
       </section>
 
       {/* Ideal Use Cases */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 ">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">Ideal Use Cases for CATI</h2>
           <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-slate-50 p-6 rounded-xl border border-slate-200">
+            <div className=" p-6 rounded-xl border border-slate-200">
               <h4 className="font-bold text-gray-900 mb-2">B2B Research</h4>
               <p className="text-gray-600 text-sm">Reaching busy professionals and decision-makers who prefer phone communication</p>
             </div>
-            <div className="bg-slate-50 p-6 rounded-xl border border-slate-200">
+            <div className=" p-6 rounded-xl border border-slate-200">
               <h4 className="font-bold text-gray-900 mb-2">Complex Surveys</h4>
               <p className="text-gray-600 text-sm">Technical or detailed questionnaires requiring explanation and probing</p>
             </div>
-            <div className="bg-slate-50 p-6 rounded-xl border border-slate-200">
+            <div className=" p-6 rounded-xl border border-slate-200">
               <h4 className="font-bold text-gray-900 mb-2">Sensitive Topics</h4>
               <p className="text-gray-600 text-sm">Research on personal or confidential subjects benefiting from human rapport</p>
             </div>
-            <div className="bg-slate-50 p-6 rounded-xl border border-slate-200">
+            <div className=" p-6 rounded-xl border border-slate-200">
               <h4 className="font-bold text-gray-900 mb-2">Low Digital Access</h4>
               <p className="text-gray-600 text-sm">Audiences with limited internet access or technology literacy</p>
             </div>
@@ -287,7 +287,7 @@ export const CATIPage = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-50">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 ">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
             Ready to Launch Your CATI Study?
@@ -302,7 +302,7 @@ export const CATIPage = () => {
               </Button>
             </Link>
             <Link to="/services">
-              <Button size="lg" variant="outline" className="text-lg px-8 h-14 border-2 border-slate-800 text-slate-800 hover:bg-white">
+              <Button size="lg" variant="outline" className="text-lg px-8 h-14 border-2 border-slate-800 text-slate-800 hover:">
                 View All Services
               </Button>
             </Link>
