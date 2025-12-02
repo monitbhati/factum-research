@@ -74,18 +74,18 @@ export const AboutPage = () => {
       </section>
 
       {/* Mission & Vision */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-transparent">
         <div className="container mx-auto max-w-6xl">
           <div className="grid md:grid-cols-2 gap-12">
-            <div className="bg-white/95 backdrop-blur-md p-10 rounded-2xl border-2 border-yellow-200 shadow-xl">
-              <h2 className="text-3xl font-bold text-white drop-shadow-lg mb-4">Our Mission</h2>
-              <p className="text-gray-100 drop-shadow-md leading-relaxed">
+            <div className="bg-white/95 backdrop-blur-md p-10 rounded-2xl border-2 border-yellow-400 shadow-xl">
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Mission</h2>
+              <p className="text-gray-700 leading-relaxed">
                 To deliver quality data with speed and efficiency, minimizing complexity while maximizing accuracy. We believe in streamlined processes that provide you with reliable insights when you need them most.
               </p>
             </div>
-            <div className="bg-white/95 backdrop-blur-md p-10 rounded-2xl border-2 border-yellow-200 shadow-xl">
-              <h2 className="text-3xl font-bold text-white drop-shadow-lg mb-4">Our Vision</h2>
-              <p className="text-gray-100 drop-shadow-md leading-relaxed">
+            <div className="bg-white/95 backdrop-blur-md p-10 rounded-2xl border-2 border-pink-400 shadow-xl">
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Vision</h2>
+              <p className="text-gray-700 leading-relaxed">
                 To expand our reach across markets and establish ourselves as the trusted and reliable research partner for life. We envision long-term partnerships built on consistent quality, transparency, and unwavering commitment to your success.
               </p>
             </div>
