@@ -167,7 +167,7 @@ export const AboutPage = () => {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Global Reach</h3>
               <p className="text-gray-600 leading-relaxed">
-                Pan-global panel network spanning 50+ countries with 10 million+ verified panelists across all major markets.
+                Pan-global panel network spanning 50+ countries with verified panelists across all major markets.
               </p>
             </div>
             <div className="text-center">
