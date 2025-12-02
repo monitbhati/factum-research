@@ -1,20 +1,20 @@
-from fastapi import APIRouter, HTTPException, status
-from motor.motor_asyncio import AsyncIOMotorClient
+from fastapi import APIRouter, HTTPException, status, Depends
 from models.user import UserCreate, UserLogin, User, UserInDB, UserResponse, LoginResponse
 from utils.auth import get_password_hash, verify_password, create_access_token
 from datetime import datetime
-import os
 import logging
 
 logger = logging.getLogger(__name__)
 
 router = APIRouter(prefix="/auth", tags=["authentication"])
 
-# MongoDB connection
-mongo_url = os.environ['MONGO_URL']
-client = AsyncIOMotorClient(mongo_url)
-db = client[os.environ['DB_NAME']]
-users_collection = db.users
+# Database dependency will be injected
+users_collection = None
+
+def set_database(db):
+    """Set the database connection for this router."""
+    global users_collection
+    users_collection = db.users
 
 @router.post("/signup", response_model=dict, status_code=status.HTTP_201_CREATED)
 async def signup(user_data: UserCreate):
