@@ -24,7 +24,7 @@ export const Header = () => {
             <Link 
               to="/" 
               className={`font-medium transition-colors ${
-                isActive('/') ? 'text-orange-600' : 'text-gray-700 hover:text-orange-600'
+                isActive('/') ? 'text-pink-700' : 'text-gray-700 hover:text-pink-700'
               }`}
             >
               Home
@@ -32,7 +32,7 @@ export const Header = () => {
             <Link 
               to="/about" 
               className={`font-medium transition-colors ${
-                isActive('/about') ? 'text-orange-600' : 'text-gray-700 hover:text-orange-600'
+                isActive('/about') ? 'text-pink-700' : 'text-gray-700 hover:text-pink-700'
               }`}
             >
               About
@@ -40,7 +40,7 @@ export const Header = () => {
             <Link 
               to="/services" 
               className={`font-medium transition-colors ${
-                isActive('/services') ? 'text-orange-600' : 'text-gray-700 hover:text-orange-600'
+                isActive('/services') ? 'text-pink-700' : 'text-gray-700 hover:text-pink-700'
               }`}
             >
               Services
@@ -48,13 +48,13 @@ export const Header = () => {
             <Link 
               to="/join-us" 
               className={`font-medium transition-colors ${
-                isActive('/join-us') ? 'text-orange-600' : 'text-gray-700 hover:text-orange-600'
+                isActive('/join-us') ? 'text-pink-700' : 'text-gray-700 hover:text-pink-700'
               }`}
             >
               Join Us
             </Link>
             <Link to="/contact">
-              <Button className="bg-gradient-to-r from-orange-600 to-red-500 hover:from-orange-700 hover:to-red-600 px-6">Contact</Button>
+              <Button className="bg-gradient-to-r from-yellow-500 to-pink-700 hover:from-yellow-600 hover:to-pink-800 px-6">Contact</Button>
             </Link>
           </nav>
 
