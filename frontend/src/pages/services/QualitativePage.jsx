@@ -208,35 +208,35 @@ export const QualitativePage = () => {
           <h2 className="text-4xl font-bold text-white drop-shadow-lg mb-12 text-center">Our Qualitative Research Process</h2>
           <div className="space-y-6">
             <div className="flex items-start gap-4">
-              <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold text-lg">1</div>
+              <div className="w-12 h-12 bg-gradient-to-r from-yellow-500 to-pink-700 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold text-lg">1</div>
               <div>
                 <h4 className="text-xl font-bold text-white drop-shadow-md mb-2">Research Design</h4>
                 <p className="text-gray-100 drop-shadow-sm leading-relaxed">We collaborate with you to define research objectives, develop discussion guides, and select appropriate qualitative methods for your needs.</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
-              <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold text-lg">2</div>
+              <div className="w-12 h-12 bg-gradient-to-r from-yellow-500 to-pink-700 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold text-lg">2</div>
               <div>
                 <h4 className="text-xl font-bold text-white drop-shadow-md mb-2">Participant Recruitment</h4>
                 <p className="text-gray-100 drop-shadow-sm leading-relaxed">Targeted recruitment with detailed screeners ensures participants match your specifications and can provide valuable insights.</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
-              <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold text-lg">3</div>
+              <div className="w-12 h-12 bg-gradient-to-r from-yellow-500 to-pink-700 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold text-lg">3</div>
               <div>
                 <h4 className="text-xl font-bold text-white drop-shadow-md mb-2">Fieldwork Execution</h4>
                 <p className="text-gray-100 drop-shadow-sm leading-relaxed">Expert moderators conduct interviews or groups with appropriate probing, creating environments that encourage authentic sharing.</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
-              <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold text-lg">4</div>
+              <div className="w-12 h-12 bg-gradient-to-r from-yellow-500 to-pink-700 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold text-lg">4</div>
               <div>
                 <h4 className="text-xl font-bold text-white drop-shadow-md mb-2">Analysis & Synthesis</h4>
                 <p className="text-gray-100 drop-shadow-sm leading-relaxed">Rigorous thematic analysis identifies patterns, key themes, and strategic insights from your qualitative data.</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
-              <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold text-lg">5</div>
+              <div className="w-12 h-12 bg-gradient-to-r from-yellow-500 to-pink-700 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold text-lg">5</div>
               <div>
                 <h4 className="text-xl font-bold text-white drop-shadow-md mb-2">Strategic Reporting</h4>
                 <p className="text-gray-100 drop-shadow-sm leading-relaxed">Comprehensive reports with rich verbatims, thematic insights, and actionable recommendations tied to your business objectives.</p>

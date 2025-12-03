@@ -225,35 +225,35 @@ export const SurveyDesigningPage = () => {
           <h2 className="text-4xl font-bold text-white drop-shadow-lg mb-12 text-center">Our Survey Design Process</h2>
           <div className="space-y-6">
             <div className="flex items-start gap-4">
-              <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold text-lg">1</div>
+              <div className="w-12 h-12 bg-gradient-to-r from-yellow-500 to-pink-700 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold text-lg">1</div>
               <div>
                 <h4 className="text-xl font-bold text-white drop-shadow-md mb-2">Objectives Briefing</h4>
                 <p className="text-gray-100 drop-shadow-sm leading-relaxed">We start by understanding your research goals, target audience, and key metrics to inform survey structure and content.</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
-              <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold text-lg">2</div>
+              <div className="w-12 h-12 bg-gradient-to-r from-yellow-500 to-pink-700 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold text-lg">2</div>
               <div>
                 <h4 className="text-xl font-bold text-white drop-shadow-md mb-2">Questionnaire Development</h4>
                 <p className="text-gray-100 drop-shadow-sm leading-relaxed">Our researchers craft questions, select scales, and structure the survey flow to optimize data quality and completion rates.</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
-              <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold text-lg">3</div>
+              <div className="w-12 h-12 bg-gradient-to-r from-yellow-500 to-pink-700 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold text-lg">3</div>
               <div>
                 <h4 className="text-xl font-bold text-white drop-shadow-md mb-2">Programming & Logic</h4>
                 <p className="text-gray-100 drop-shadow-sm leading-relaxed">Complex survey logic, randomization, and piping are programmed and tested to ensure proper functionality.</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
-              <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold text-lg">4</div>
+              <div className="w-12 h-12 bg-gradient-to-r from-yellow-500 to-pink-700 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold text-lg">4</div>
               <div>
                 <h4 className="text-xl font-bold text-white drop-shadow-md mb-2">Pilot Testing</h4>
                 <p className="text-gray-100 drop-shadow-sm leading-relaxed">Soft launch with small sample identifies issues, timing concerns, and areas for improvement before full deployment.</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
-              <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold text-lg">5</div>
+              <div className="w-12 h-12 bg-gradient-to-r from-yellow-500 to-pink-700 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold text-lg">5</div>
               <div>
                 <h4 className="text-xl font-bold text-white drop-shadow-md mb-2">Refinement & Launch</h4>
                 <p className="text-gray-100 drop-shadow-sm leading-relaxed">Based on pilot results, we refine the survey and launch full fieldwork with confidence in data quality.</p>
