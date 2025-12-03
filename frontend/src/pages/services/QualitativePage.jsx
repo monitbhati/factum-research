@@ -99,7 +99,7 @@ export const QualitativePage = () => {
               <CardContent className="pt-8 pb-8">
                 <Users className="text-green-600 mb-4" size={40} />
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Focus Group Discussions</h3>
-                <p className="text-gray-100 drop-shadow-sm leading-relaxed mb-4">
+                <p className="text-gray-900 leading-relaxed mb-4">
                   Moderated group discussions where participants interact, share viewpoints, and build on each other's ideas.
                 </p>
                 <ul className="space-y-2">
@@ -127,7 +127,7 @@ export const QualitativePage = () => {
               <CardContent className="pt-8 pb-8">
                 <Eye className="text-purple-600 mb-4" size={40} />
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Ethnographic Research</h3>
-                <p className="text-gray-100 drop-shadow-sm leading-relaxed mb-4">
+                <p className="text-gray-900 leading-relaxed mb-4">
                   Observational research in natural environments to understand behaviors, contexts, and cultural influences.
                 </p>
                 <ul className="space-y-2">
