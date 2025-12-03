@@ -251,21 +251,21 @@ export const QualitativePage = () => {
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-4xl font-bold text-white drop-shadow-lg mb-12 text-center">When to Choose Qualitative Research</h2>
           <div className="grid md:grid-cols-2 gap-6">
-            <div className=" p-6 rounded-xl border border-yellow-200">
-              <h4 className="font-bold text-gray-900 mb-2">Exploratory Research</h4>
-              <p className="text-gray-600 text-sm">Understanding new markets, emerging trends, or unexplored consumer territories</p>
+            <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl border-2 border-white/30">
+              <h4 className="font-bold text-white drop-shadow-md mb-2">Exploratory Research</h4>
+              <p className="text-gray-100 drop-shadow-sm text-sm">Understanding new markets, emerging trends, or unexplored consumer territories</p>
             </div>
-            <div className=" p-6 rounded-xl border border-yellow-200">
-              <h4 className="font-bold text-gray-900 mb-2">Understanding "Why"</h4>
-              <p className="text-gray-600 text-sm">Uncovering motivations, emotions, and decision-making processes behind behaviors</p>
+            <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl border-2 border-white/30">
+              <h4 className="font-bold text-white drop-shadow-md mb-2">Understanding "Why"</h4>
+              <p className="text-gray-100 drop-shadow-sm text-sm">Uncovering motivations, emotions, and decision-making processes behind behaviors</p>
             </div>
-            <div className=" p-6 rounded-xl border border-yellow-200">
-              <h4 className="font-bold text-gray-900 mb-2">Concept Testing</h4>
-              <p className="text-gray-600 text-sm">Evaluating new products, messaging, or ideas with rich feedback and reactions</p>
+            <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl border-2 border-white/30">
+              <h4 className="font-bold text-white drop-shadow-md mb-2">Concept Testing</h4>
+              <p className="text-gray-100 drop-shadow-sm text-sm">Evaluating new products, messaging, or ideas with rich feedback and reactions</p>
             </div>
-            <div className=" p-6 rounded-xl border border-yellow-200">
-              <h4 className="font-bold text-gray-900 mb-2">Complex Topics</h4>
-              <p className="text-gray-600 text-sm">Exploring sensitive subjects or complicated issues requiring nuanced discussion</p>
+            <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl border-2 border-white/30">
+              <h4 className="font-bold text-white drop-shadow-md mb-2">Complex Topics</h4>
+              <p className="text-gray-100 drop-shadow-sm text-sm">Exploring sensitive subjects or complicated issues requiring nuanced discussion</p>
             </div>
           </div>
         </div>
