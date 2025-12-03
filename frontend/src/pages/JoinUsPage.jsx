@@ -241,7 +241,7 @@ export const JoinUsPage = () => {
                             />
                           </div>
                           <div>
-                            <Label htmlFor="lastName">Last Name *</Label>
+                            <Label htmlFor="lastName" className="text-white drop-shadow-md">Last Name *</Label>
                             <Input
                               id="lastName"
                               name="lastName"
@@ -252,7 +252,7 @@ export const JoinUsPage = () => {
                           </div>
                         </div>
                         <div>
-                          <Label htmlFor="email">Email *</Label>
+                          <Label htmlFor="email" className="text-white drop-shadow-md">Email *</Label>
                           <Input
                             id="email"
                             name="email"
@@ -263,7 +263,7 @@ export const JoinUsPage = () => {
                           />
                         </div>
                         <div>
-                          <Label htmlFor="password">Password *</Label>
+                          <Label htmlFor="password" className="text-white drop-shadow-md">Password *</Label>
                           <Input
                             id="password"
                             name="password"
@@ -275,7 +275,7 @@ export const JoinUsPage = () => {
                         </div>
                         <div className="grid grid-cols-2 gap-4">
                           <div>
-                            <Label htmlFor="age">Age *</Label>
+                            <Label htmlFor="age" className="text-white drop-shadow-md">Age *</Label>
                             <Input
                               id="age"
                               name="age"
@@ -286,7 +286,7 @@ export const JoinUsPage = () => {
                             />
                           </div>
                           <div>
-                            <Label htmlFor="gender">Gender *</Label>
+                            <Label htmlFor="gender" className="text-white drop-shadow-md">Gender *</Label>
                             <Select name="gender" onValueChange={(value) => handleSelectChange('gender', value)} required>
                               <SelectTrigger>
                                 <SelectValue placeholder="Select" />
