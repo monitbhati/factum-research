@@ -68,7 +68,7 @@ export const SurveyDesigningPage = () => {
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">Our Survey Design Expertise</h2>
           <div className="grid md:grid-cols-2 gap-8">
-            <Card className="border-2 border-gray-100">
+            <Card className="border-2 border-yellow-300 bg-white/95 backdrop-blur-md">
               <CardContent className="pt-8 pb-8">
                 <Layout className="text-pink-700 mb-4" size={32} />
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Question Development</h3>
@@ -96,7 +96,7 @@ export const SurveyDesigningPage = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-2 border-gray-100">
+            <Card className="border-2 border-yellow-300 bg-white/95 backdrop-blur-md">
               <CardContent className="pt-8 pb-8">
                 <Settings className="text-green-600 mb-4" size={32} />
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Survey Logic Programming</h3>
@@ -124,7 +124,7 @@ export const SurveyDesigningPage = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-2 border-gray-100">
+            <Card className="border-2 border-yellow-300 bg-white/95 backdrop-blur-md">
               <CardContent className="pt-8 pb-8">
                 <Smartphone className="text-purple-600 mb-4" size={32} />
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Mobile Optimization</h3>
@@ -152,7 +152,7 @@ export const SurveyDesigningPage = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-2 border-gray-100">
+            <Card className="border-2 border-yellow-300 bg-white/95 backdrop-blur-md">
               <CardContent className="pt-8 pb-8">
                 <TestTube className="text-orange-600 mb-4" size={32} />
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Testing & Refinement</h3>

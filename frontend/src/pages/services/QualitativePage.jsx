@@ -67,7 +67,7 @@ export const QualitativePage = () => {
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">Our Qualitative Methods</h2>
           <div className="grid md:grid-cols-3 gap-8 mb-12">
-            <Card className="border-2 border-gray-100">
+            <Card className="border-2 border-yellow-300 bg-white/95 backdrop-blur-md">
               <CardContent className="pt-8 pb-8">
                 <MessageCircle className="text-pink-700 mb-4" size={40} />
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">In-Depth Interviews (IDI)</h3>
@@ -95,7 +95,7 @@ export const QualitativePage = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-2 border-gray-100">
+            <Card className="border-2 border-yellow-300 bg-white/95 backdrop-blur-md">
               <CardContent className="pt-8 pb-8">
                 <Users className="text-green-600 mb-4" size={40} />
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Focus Group Discussions</h3>
@@ -123,7 +123,7 @@ export const QualitativePage = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-2 border-gray-100">
+            <Card className="border-2 border-yellow-300 bg-white/95 backdrop-blur-md">
               <CardContent className="pt-8 pb-8">
                 <Eye className="text-purple-600 mb-4" size={40} />
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Ethnographic Research</h3>
@@ -159,7 +159,7 @@ export const QualitativePage = () => {
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">Our Qualitative Approach</h2>
           <div className="grid md:grid-cols-2 gap-8">
-            <Card className="border-2 border-gray-100">
+            <Card className="border-2 border-yellow-300 bg-white/95 backdrop-blur-md">
               <CardContent className="pt-8 pb-8">
                 <Target className="text-pink-700 mb-4" size={32} />
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Expert Moderators</h3>
@@ -169,7 +169,7 @@ export const QualitativePage = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-2 border-gray-100">
+            <Card className="border-2 border-yellow-300 bg-white/95 backdrop-blur-md">
               <CardContent className="pt-8 pb-8">
                 <Lightbulb className="text-green-600 mb-4" size={32} />
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Thematic Analysis</h3>
@@ -179,7 +179,7 @@ export const QualitativePage = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-2 border-gray-100">
+            <Card className="border-2 border-yellow-300 bg-white/95 backdrop-blur-md">
               <CardContent className="pt-8 pb-8">
                 <FileText className="text-purple-600 mb-4" size={32} />
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Comprehensive Documentation</h3>
@@ -189,7 +189,7 @@ export const QualitativePage = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-2 border-gray-100">
+            <Card className="border-2 border-yellow-300 bg-white/95 backdrop-blur-md">
               <CardContent className="pt-8 pb-8">
                 <Users className="text-orange-600 mb-4" size={32} />
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Strategic Recruitment</h3>

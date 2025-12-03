@@ -133,7 +133,7 @@ export const CATIPage = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-2 border-gray-100">
+            <Card className="border-2 border-yellow-300 bg-white/95 backdrop-blur-md">
               <CardContent className="pt-8 pb-8">
                 <Phone className="text-green-600 mb-4" size={32} />
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Advanced CATI Software</h3>
@@ -161,7 +161,7 @@ export const CATIPage = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-2 border-gray-100">
+            <Card className="border-2 border-yellow-300 bg-white/95 backdrop-blur-md">
               <CardContent className="pt-8 pb-8">
                 <Shield className="text-purple-600 mb-4" size={32} />
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Quality Control Systems</h3>
@@ -189,7 +189,7 @@ export const CATIPage = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-2 border-gray-100">
+            <Card className="border-2 border-yellow-300 bg-white/95 backdrop-blur-md">
               <CardContent className="pt-8 pb-8">
                 <Globe className="text-orange-600 mb-4" size={32} />
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Multi-Language Support</h3>
