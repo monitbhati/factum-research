@@ -18,15 +18,17 @@ import {
 
 export const SurveyDesigningPage = () => {
   return (
-    <div 
-      className="min-h-screen relative"
-      style={{
-        backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)), url(https://images.unsplash.com/photo-1589278559766-6d2fc8520367?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njd8MHwxfHNlYXJjaHwyfHxxdWVzdGlvbm5haXJlJTIwZGVzaWduJTIwY29sb3JmdWx8ZW58MHx8fHllbGxvd3wxNzY0NzE5OTI3fDA&ixlib=rb-4.1.0&q=85)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundAttachment: 'fixed'
-      }}
-    >
+    <div className="min-h-screen bg-white relative">
+      {/* Full Page Background Image */}
+      <div className="fixed inset-0 z-0">
+        <img 
+          src="https://images.unsplash.com/photo-1589278559766-6d2fc8520367?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njd8MHwxfHNlYXJjaHwyfHxxdWVzdGlvbm5haXJlJTIwZGVzaWduJTIwY29sb3JmdWx8ZW58MHx8fHllbGxvd3wxNzY0NzE5OTI3fDA&ixlib=rb-4.1.0&q=85" 
+          alt="Survey Designing"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-purple-900/90 via-pink-900/85 to-yellow-900/75"></div>
+      </div>
+      
       <div className="relative z-10">
       <Header />
 
