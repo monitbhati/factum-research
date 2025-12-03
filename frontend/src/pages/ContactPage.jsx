@@ -102,15 +102,15 @@ export const ContactPage = () => {
         <div className="container mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
             {/* Contact Form */}
-            <Card className="border-2 border-yellow-200 shadow-2xl bg-white/98 backdrop-blur-lg">
+            <Card className="border-2 border-white/30 shadow-2xl bg-white/10 backdrop-blur-lg">
               <CardHeader>
-                <CardTitle className="text-2xl">Submit Inquiry</CardTitle>
-                <CardDescription className="text-base">Our team responds to all inquiries within 24 hours</CardDescription>
+                <CardTitle className="text-2xl text-white drop-shadow-md">Submit Inquiry</CardTitle>
+                <CardDescription className="text-base text-gray-100 drop-shadow-sm">Our team responds to all inquiries within 24 hours</CardDescription>
               </CardHeader>
               <CardContent>
                 <form onSubmit={handleSubmit} className="space-y-5">
                   <div>
-                    <label className="block text-sm font-semibold text-gray-700 mb-2">Full Name *</label>
+                    <label className="block text-sm font-semibold text-white drop-shadow-md mb-2">Full Name *</label>
                     <Input 
                       name="name"
                       value={formData.name}
@@ -121,7 +121,7 @@ export const ContactPage = () => {
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-semibold text-gray-700 mb-2">Email Address *</label>
+                    <label className="block text-sm font-semibold text-white drop-shadow-md mb-2">Email Address *</label>
                     <Input 
                       name="email"
                       type="email"
@@ -133,7 +133,7 @@ export const ContactPage = () => {
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-semibold text-gray-700 mb-2">Organization</label>
+                    <label className="block text-sm font-semibold text-white drop-shadow-md mb-2">Organization</label>
                     <Input 
                       name="company"
                       value={formData.company}
@@ -143,7 +143,7 @@ export const ContactPage = () => {
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-semibold text-gray-700 mb-2">Research Requirements *</label>
+                    <label className="block text-sm font-semibold text-white drop-shadow-md mb-2">Research Requirements *</label>
                     <Textarea 
                       name="message"
                       value={formData.message}
@@ -167,15 +167,15 @@ export const ContactPage = () => {
             {/* Contact Information */}
             <div className="space-y-8">
               <div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">Contact Channels</h3>
+                <h3 className="text-2xl font-bold text-white drop-shadow-lg mb-6">Contact Channels</h3>
                 <div className="space-y-6">
                   <div className="flex items-start">
                     <div className="w-14 h-14 bg-gradient-to-br from-yellow-400 to-pink-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
                       <Mail className="text-white" size={24} strokeWidth={2.5} />
                     </div>
                     <div className="ml-5">
-                      <div className="font-semibold text-gray-900 mb-1">Email</div>
-                      <div className="text-gray-600">{mockData.company.email}</div>
+                      <div className="font-semibold text-white drop-shadow-md mb-1">Email</div>
+                      <div className="text-gray-100 drop-shadow-sm">{mockData.company.email}</div>
                     </div>
                   </div>
                   <div className="flex items-start">
@@ -183,8 +183,8 @@ export const ContactPage = () => {
                       <PhoneCall className="text-white" size={24} strokeWidth={2.5} />
                     </div>
                     <div className="ml-5">
-                      <div className="font-semibold text-gray-900 mb-1">Phone</div>
-                      <div className="text-gray-600">{mockData.company.phone}</div>
+                      <div className="font-semibold text-white drop-shadow-md mb-1">Phone</div>
+                      <div className="text-gray-100 drop-shadow-sm">{mockData.company.phone}</div>
                     </div>
                   </div>
                   <div className="flex items-start">
@@ -192,27 +192,9 @@ export const ContactPage = () => {
                       <MapPin className="text-white" size={24} />
                     </div>
                     <div className="ml-5">
-                      <div className="font-semibold text-gray-900 mb-1">Office Location</div>
-                      <div className="text-gray-600">{mockData.company.address}</div>
+                      <div className="font-semibold text-white drop-shadow-md mb-1">Office Location</div>
+                      <div className="text-gray-100 drop-shadow-sm">{mockData.company.address}</div>
                     </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-slate-50 p-8 rounded-2xl border border-slate-200">
-                <h4 className="font-bold text-gray-900 mb-4 text-lg">Office Hours</h4>
-                <div className="text-gray-700 space-y-2">
-                  <div className="flex justify-between">
-                    <span className="font-medium">Monday - Friday</span>
-                    <span>9:00 AM - 6:00 PM</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="font-medium">Saturday</span>
-                    <span>10:00 AM - 4:00 PM</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="font-medium">Sunday</span>
-                    <span>Closed</span>
                   </div>
                 </div>
               </div>
