@@ -72,7 +72,7 @@ export const SurveyDesigningPage = () => {
               <CardContent className="pt-8 pb-8">
                 <Layout className="text-pink-700 mb-4" size={32} />
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Question Development</h3>
-                <p className="text-gray-100 drop-shadow-sm leading-relaxed mb-4">
+                <p className="text-gray-900 leading-relaxed mb-4">
                   Crafting clear, unbiased questions that capture accurate data while avoiding common pitfalls like leading questions or double-barreling.
                 </p>
                 <ul className="space-y-2">
@@ -100,7 +100,7 @@ export const SurveyDesigningPage = () => {
               <CardContent className="pt-8 pb-8">
                 <Settings className="text-green-600 mb-4" size={32} />
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Survey Logic Programming</h3>
-                <p className="text-gray-100 drop-shadow-sm leading-relaxed mb-4">
+                <p className="text-gray-900 leading-relaxed mb-4">
                   Complex skip patterns, piping, and randomization ensure each respondent sees only relevant questions in the right sequence.
                 </p>
                 <ul className="space-y-2">
@@ -128,7 +128,7 @@ export const SurveyDesigningPage = () => {
               <CardContent className="pt-8 pb-8">
                 <Smartphone className="text-purple-600 mb-4" size={32} />
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Mobile Optimization</h3>
-                <p className="text-gray-100 drop-shadow-sm leading-relaxed mb-4">
+                <p className="text-gray-900 leading-relaxed mb-4">
                   Responsive design ensures seamless survey experience across all devices, from smartphones to desktop computers.
                 </p>
                 <ul className="space-y-2">
@@ -156,7 +156,7 @@ export const SurveyDesigningPage = () => {
               <CardContent className="pt-8 pb-8">
                 <TestTube className="text-orange-600 mb-4" size={32} />
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Testing & Refinement</h3>
-                <p className="text-gray-100 drop-shadow-sm leading-relaxed mb-4">
+                <p className="text-gray-900 leading-relaxed mb-4">
                   Rigorous pilot testing identifies issues before launch, ensuring smooth fieldwork and high-quality data collection.
                 </p>
                 <ul className="space-y-2">
