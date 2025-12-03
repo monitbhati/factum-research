@@ -163,7 +163,7 @@ export const QualitativePage = () => {
               <CardContent className="pt-8 pb-8">
                 <Target className="text-pink-700 mb-4" size={32} />
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Expert Moderators</h3>
-                <p className="text-gray-100 drop-shadow-sm leading-relaxed">
+                <p className="text-gray-900 leading-relaxed">
                   Our moderators bring years of experience, deep listening skills, and the ability to probe beneath surface responses to uncover true insights. They create comfortable environments that encourage candid sharing.
                 </p>
               </CardContent>
@@ -173,7 +173,7 @@ export const QualitativePage = () => {
               <CardContent className="pt-8 pb-8">
                 <Lightbulb className="text-green-600 mb-4" size={32} />
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Thematic Analysis</h3>
-                <p className="text-gray-100 drop-shadow-sm leading-relaxed">
+                <p className="text-gray-900 leading-relaxed">
                   We employ rigorous analytical frameworks to identify patterns, themes, and insights across qualitative data. Our analysis goes beyond reporting quotes to synthesizing strategic implications.
                 </p>
               </CardContent>
@@ -183,7 +183,7 @@ export const QualitativePage = () => {
               <CardContent className="pt-8 pb-8">
                 <FileText className="text-purple-600 mb-4" size={32} />
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Comprehensive Documentation</h3>
-                <p className="text-gray-100 drop-shadow-sm leading-relaxed">
+                <p className="text-gray-900 leading-relaxed">
                   Full transcriptions, detailed field notes, and video recordings preserve the richness of qualitative data for deep analysis and future reference.
                 </p>
               </CardContent>
@@ -193,7 +193,7 @@ export const QualitativePage = () => {
               <CardContent className="pt-8 pb-8">
                 <Users className="text-orange-600 mb-4" size={32} />
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Strategic Recruitment</h3>
-                <p className="text-gray-100 drop-shadow-sm leading-relaxed">
+                <p className="text-gray-900 leading-relaxed">
                   Careful participant screening ensures we recruit individuals who can articulate experiences and provide rich, meaningful contributions to your research.
                 </p>
               </CardContent>
