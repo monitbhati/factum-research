@@ -20,7 +20,7 @@ export const QualitativePage = () => {
     <div 
       className="min-h-screen relative"
       style={{
-        backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)), url(https://images.unsplash.com/photo-1573878587306-c6723c815090?w=1920)',
+        backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)), url(https://images.unsplash.com/photo-1672917187338-7f81ecac3d3f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHw0fHxwZW9wbGUlMjBkaXNjdXNzaW9uJTIwZm9jdXMlMjBncm91cHxlbnwwfHx8fDE3NjQ3MTk5MjJ8MA&ixlib=rb-4.1.0&q=85)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed'

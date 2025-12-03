@@ -21,7 +21,7 @@ export const SurveyDesigningPage = () => {
     <div 
       className="min-h-screen relative"
       style={{
-        backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)), url(https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?w=1920)',
+        backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)), url(https://images.unsplash.com/photo-1589278559766-6d2fc8520367?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njd8MHwxfHNlYXJjaHwyfHxxdWVzdGlvbm5haXJlJTIwZGVzaWduJTIwY29sb3JmdWx8ZW58MHx8fHllbGxvd3wxNzY0NzE5OTI3fDA&ixlib=rb-4.1.0&q=85)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed'

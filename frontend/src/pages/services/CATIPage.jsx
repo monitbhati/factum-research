@@ -21,7 +21,7 @@ export const CATIPage = () => {
     <div 
       className="min-h-screen relative"
       style={{
-        backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)), url(https://images.unsplash.com/photo-1709715357479-591f9971fb05?w=1920)',
+        backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)), url(https://images.pexels.com/photos/7709291/pexels-photo-7709291.jpeg)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed'

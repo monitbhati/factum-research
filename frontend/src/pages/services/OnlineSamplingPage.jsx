@@ -20,7 +20,7 @@ export const OnlineSamplingPage = () => {
     <div 
       className="min-h-screen relative"
       style={{
-        backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)), url(https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=1920)',
+        backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)), url(https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed'
