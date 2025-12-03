@@ -4,8 +4,8 @@ export const mockData = {
     tagline: 'Facts That Matter, Insights That Count',
     description: 'Strategic market intelligence powered by precision methodologies. We transform raw data into competitive advantages through survey designing, online sampling, CATI excellence, and deep qualitative exploration.',
     email: 'contact@factumresearch.com',
-    phone: '+1 (555) 123-4567',
-    address: '123 Research Boulevard, Business District, City, State 12345'
+    phone: '+91 8690396627',
+    address: 'B2-1424 Tower-B2 DLF Mypad TCG 6/6, Vibhuti Khand, Gomti Nagar, Lucknow - Uttar Pradesh 226010'
   },
   
   stats: {
