@@ -35,10 +35,10 @@ export const QualitativePage = () => {
       <section className="pt-32 pb-24 px-4 sm:px-6 lg:px-8 relative">
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight text-gray-900">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight text-white drop-shadow-lg">
               Qualitative Deep Dives
             </h1>
-            <p className="text-lg sm:text-xl mb-8 leading-relaxed text-gray-700">
+            <p className="text-lg sm:text-xl mb-8 leading-relaxed text-gray-100 drop-shadow-md">
               Uncover the "why" behind behaviors through expert-led in-depth interviews, focus groups, and ethnographic research that reveal insights beyond numbers
             </p>
             <Link to="/contact">
