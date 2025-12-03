@@ -202,9 +202,9 @@ export const ContactPage = () => {
           </div>
         </div>
         </section>
-      </div>
 
       <Footer />
+      </div>
     </div>
   );
 };
