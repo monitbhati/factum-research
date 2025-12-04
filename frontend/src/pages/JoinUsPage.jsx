@@ -90,8 +90,9 @@ export const JoinUsPage = () => {
       setAgreedToPrivacy(false);
       setActiveTab('login');
     } catch (error) {
-      console.error('Signup error:', error);
-      toast.error(error.response?.data?.detail || 'Registration failed');
+      console.error('Signup error:', error.message || error);
+      const errorMessage = error.response?.data?.detail || error.message || 'Registration failed';
+      toast.error(errorMessage);
     } finally {
       setLoading(false);
     }
