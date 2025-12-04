@@ -65,9 +65,14 @@ export const JoinUsPage = () => {
     setLoading(true);
     try {
       const response = await axios.post(`${API}/auth/login`, loginData);
-      localStorage.setItem('token', response.data.token);
-      toast.success('Login successful!');
+      localStorage.setItem('token', response.data.access_token);
+      toast.success('Login successful! Redirecting to dashboard...');
       setLoginData({ email: '', password: '' });
+      
+      // Redirect to user dashboard after 1 second
+      setTimeout(() => {
+        navigate('/dashboard');
+      }, 1000);
     } catch (error) {
       console.error('Login error:', error);
       toast.error(error.response?.data?.detail || 'Login failed');
