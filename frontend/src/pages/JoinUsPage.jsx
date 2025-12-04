@@ -90,8 +90,22 @@ export const JoinUsPage = () => {
       setAgreedToPrivacy(false);
       setActiveTab('login');
     } catch (error) {
-      console.error('Signup error:', error.message || error);
-      const errorMessage = error.response?.data?.detail || error.message || 'Registration failed';
+      console.error('Signup error:', error.message || 'Registration failed');
+      let errorMessage = 'Registration failed';
+      
+      if (error.response?.data?.detail) {
+        // Handle both string and array formats
+        if (typeof error.response.data.detail === 'string') {
+          errorMessage = error.response.data.detail;
+        } else if (Array.isArray(error.response.data.detail)) {
+          errorMessage = error.response.data.detail.map(err => err.msg || err).join(', ');
+        } else {
+          errorMessage = 'Registration failed. Please check your information.';
+        }
+      } else if (error.message) {
+        errorMessage = error.message;
+      }
+      
       toast.error(errorMessage);
     } finally {
       setLoading(false);
