@@ -1,0 +1,1285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FACTUM RESEARCH - Global Panel Reach</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .presentation {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        
+        .slide {
+            min-height: 700px;
+            padding: 60px;
+            page-break-after: always;
+            position: relative;
+            background: linear-gradient(135deg, #7e22ce 0%, #db2777 50%, #eab308 100%);
+        }
+        
+        .slide-content {
+            background: white;
+            border-radius: 20px;
+            padding: 50px;
+            min-height: 580px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+        }
+        
+        .slide.cover {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+        
+        .slide.cover .slide-content {
+            background: transparent;
+            box-shadow: none;
+        }
+        
+        .logo-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .logo-box {
+            background: white;
+            padding: 20px 30px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1;
+        }
+        
+        .logo-fr {
+            font-size: 80px;
+            font-weight: 900;
+            background: linear-gradient(135deg, #eab308 0%, #db2777 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .logo-company {
+            font-size: 22px;
+            font-weight: 700;
+            color: #7e22ce;
+            letter-spacing: 3px;
+        }
+        
+        h1 {
+            font-size: 56px;
+            font-weight: 900;
+            margin-bottom: 20px;
+            color: white;
+            text-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+        
+        .subtitle {
+            font-size: 28px;
+            color: rgba(255,255,255,0.95);
+            font-weight: 600;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+        
+        h2 {
+            font-size: 36px;
+            font-weight: 800;
+            margin-bottom: 30px;
+            background: linear-gradient(135deg, #7e22ce 0%, #db2777 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        h3 {
+            font-size: 24px;
+            font-weight: 700;
+            color: #7e22ce;
+            margin: 25px 0 15px 0;
+        }
+        
+        p {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #333;
+            margin-bottom: 15px;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .stat-card {
+            background: linear-gradient(135deg, #7e22ce 0%, #db2777 100%);
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .stat-number {
+            font-size: 36px;
+            font-weight: 900;
+            margin-bottom: 8px;
+        }
+        
+        .stat-label {
+            font-size: 14px;
+            font-weight: 600;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .service-card {
+            background: linear-gradient(135deg, rgba(126, 34, 206, 0.1) 0%, rgba(219, 39, 119, 0.1) 100%);
+            padding: 25px;
+            border-radius: 12px;
+            border: 2px solid #eab308;
+        }
+        
+        .service-card h3 {
+            color: #db2777;
+            margin-top: 0;
+        }
+        
+        .panel-region {
+            background: #f9fafb;
+            padding: 20px;
+            border-radius: 12px;
+            margin: 15px 0;
+            border-left: 4px solid #db2777;
+        }
+        
+        .panel-region h3 {
+            margin-top: 0;
+            font-size: 20px;
+        }
+        
+        .characteristics-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .characteristic-item {
+            background: linear-gradient(135deg, rgba(234, 179, 8, 0.1) 0%, rgba(219, 39, 119, 0.1) 100%);
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 3px solid #7e22ce;
+        }
+        
+        .characteristic-item strong {
+            color: #7e22ce;
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        ul {
+            margin-left: 20px;
+            line-height: 1.8;
+        }
+        
+        ul li {
+            margin-bottom: 10px;
+            color: #444;
+        }
+        
+        .quality-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .quality-card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            border: 2px solid #eab308;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+        
+        .quality-icon {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+        
+        .contact-box {
+            background: linear-gradient(135deg, #7e22ce 0%, #db2777 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 16px;
+            margin-top: 30px;
+        }
+        
+        .contact-box h3 {
+            color: white;
+            margin-top: 0;
+        }
+        
+        .contact-info {
+            font-size: 18px;
+            line-height: 2;
+        }
+        
+        .contact-info a {
+            color: #fef08a;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(234, 179, 8, 0.2) 0%, rgba(219, 39, 119, 0.2) 100%);
+            padding: 25px;
+            border-radius: 12px;
+            border-left: 5px solid #eab308;
+            margin: 20px 0;
+        }
+        
+        .methodology-steps {
+            counter-reset: step-counter;
+            list-style: none;
+            margin-left: 0;
+        }
+        
+        .methodology-steps li {
+            counter-increment: step-counter;
+            position: relative;
+            padding-left: 50px;
+            margin-bottom: 25px;
+        }
+        
+        .methodology-steps li::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: linear-gradient(135deg, #7e22ce 0%, #db2777 100%);
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            font-size: 18px;
+        }
+        
+        @media print {
+            body {
+                padding: 0;
+                background: white;
+            }
+            
+            .presentation {
+                box-shadow: none;
+            }
+            
+            .slide {
+                page-break-after: always;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="presentation">
+        <!-- Slide 1: Cover -->
+        <div class="slide cover">
+            <div class="slide-content">
+                <div class="logo-section">
+                    <div class="logo-box">
+                        <div class="logo-text">
+                            <div class="logo-fr">FR</div>
+                            <div class="logo-company">FACTUM<br>RESEARCH</div>
+                        </div>
+                    </div>
+                </div>
+                <h1>Global Panel Reach</h1>
+                <p class="subtitle">Facts That Matter, Insights That Count</p>
+                <p class="subtitle" style="font-size: 20px; margin-top: 30px;">Comprehensive Panelist Network & Research Capabilities</p>
+            </div>
+        </div>
+
+        <!-- Slide 2: Who We Are -->
+        <div class="slide">
+            <div class="slide-content">
+                <h2>Who We Are?</h2>
+                <p style="font-size: 18px; margin-bottom: 25px;">
+                    <strong>FACTUM RESEARCH</strong> is a premier market research consultancy specializing in delivering 
+                    quality data with speed and efficiency. We transform complex market dynamics into strategic clarity 
+                    through precision methodologies and actionable intelligence.
+                </p>
+                
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">250+</div>
+                        <div class="stat-label">Strategic Projects</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">25+</div>
+                        <div class="stat-label">Industry Sectors</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Countries</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">98%</div>
+                        <div class="stat-label">Client Retention</div>
+                    </div>
+                </div>
+
+                <div class="highlight-box">
+                    <h3 style="margin-top: 0;">Our Mission</h3>
+                    <p>To deliver quality data with speed and efficiency, minimizing complexity while maximizing accuracy. 
+                    We believe in streamlined processes that provide you with reliable insights when you need them most.</p>
+                </div>
+
+                <div class="highlight-box">
+                    <h3 style="margin-top: 0;">Our Vision</h3>
+                    <p>To expand our reach across markets and establish ourselves as the trusted and reliable research 
+                    partner for life. We envision long-term partnerships built on consistent quality, transparency, and 
+                    unwavering commitment to your success.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: Our Services -->
+        <div class="slide">
+            <div class="slide-content">
+                <h2>Our Services</h2>
+                <p>Comprehensive research solutions tailored to your business needs</p>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>Online Sampling</h3>
+                        <p>Comprehensive online sampling solutions across diverse audience segments with precise targeting 
+                        and high-quality respondent engagement.</p>
+                        <ul style="margin-top: 15px;">
+                            <li>B2B Professional Sampling</li>
+                            <li>B2C Consumer Research</li>
+                            <li>Healthcare Specialized Panels</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="service-card">
+                        <h3>CATI Excellence</h3>
+                        <p>Professional telephone interviewing with experienced interviewers and rigorous quality protocols.</p>
+                        <ul style="margin-top: 15px;">
+                            <li>Multi-language Support</li>
+                            <li>Real-time Quality Monitoring</li>
+                            <li>Complex Survey Management</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="service-card">
+                        <h3>Qualitative Research</h3>
+                        <p>Deep-dive methodologies that uncover insights beyond numbers, revealing the 'why' behind behaviors.</p>
+                        <ul style="margin-top: 15px;">
+                            <li>In-Depth Interviews (IDI)</li>
+                            <li>Focus Group Discussions</li>
+                            <li>Ethnographic Studies</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="service-card">
+                        <h3>Survey Designing</h3>
+                        <p>Expertly crafted questionnaires optimized for data quality and respondent engagement.</p>
+                        <ul style="margin-top: 15px;">
+                            <li>Question Flow Optimization</li>
+                            <li>Skip Logic Implementation</li>
+                            <li>Multi-platform Compatibility</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 4: Panel Size & Reach -->
+        <div class="slide">
+            <div class="slide-content">
+                <h2>Global Panel Size & Reach</h2>
+                <p>Pan-global panel network spanning 50+ countries with verified panelists across all major markets</p>
+                
+                <div class="stats-grid" style="margin-bottom: 30px;">
+                    <div class="stat-card">
+                        <div class="stat-number">2M+</div>
+                        <div class="stat-label">B2B Professionals</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">500K+</div>
+                        <div class="stat-label">Healthcare Experts</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">3M+</div>
+                        <div class="stat-label">Consumer Panelists</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Countries Covered</div>
+                    </div>
+                </div>
+
+                <div class="panel-region">
+                    <h3>🌏 APAC (Asia-Pacific) - 20%</h3>
+                    <p><strong>Coverage:</strong> India, China, Japan, Australia, Singapore, South Korea, Indonesia, Thailand, 
+                    Malaysia, Philippines, Vietnam, New Zealand</p>
+                    <p><strong>Specialization:</strong> Growing consumer markets, tech adoption, emerging economies research</p>
+                </div>
+
+                <div class="panel-region">
+                    <h3>🌎 North America - 35%</h3>
+                    <p><strong>Coverage:</strong> United States, Canada, Mexico</p>
+                    <p><strong>Specialization:</strong> B2B decision-makers, healthcare professionals, high-income consumers, 
+                    technology adopters</p>
+                </div>
+
+                <div class="panel-region">
+                    <h3>🌍 Europe - 30%</h3>
+                    <p><strong>Coverage:</strong> UK, Germany, France, Spain, Italy, Netherlands, Belgium, Sweden, Norway, 
+                    Denmark, Finland, Poland, Switzerland</p>
+                    <p><strong>Specialization:</strong> GDPR-compliant research, multi-country studies, EU market insights</p>
+                </div>
+
+                <div class="panel-region">
+                    <h3>🌍 Middle East & Africa - 10%</h3>
+                    <p><strong>Coverage:</strong> UAE, Saudi Arabia, Qatar, Kuwait, South Africa, Nigeria, Egypt, Kenya</p>
+                    <p><strong>Specialization:</strong> Luxury consumers, business professionals, emerging markets</p>
+                </div>
+
+                <div class="panel-region">
+                    <h3>🌎 Latin America - 5%</h3>
+                    <p><strong>Coverage:</strong> Brazil, Argentina, Chile, Colombia, Peru, Mexico</p>
+                    <p><strong>Specialization:</strong> Consumer goods, lifestyle, financial services</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 5: Panel Recruitment Methodology -->
+        <div class="slide">
+            <div class="slide-content">
+                <h2>Panel Recruitment Methodology</h2>
+                <p>Our rigorous recruitment process ensures high-quality, engaged panelists</p>
+                
+                <ul class="methodology-steps">
+                    <li>
+                        <strong style="color: #7e22ce; font-size: 18px;">Multi-Channel Recruitment</strong>
+                        <p>We recruit panelists through targeted online advertising, social media campaigns, referral programs, 
+                        and partnerships with trusted organizations.</p>
+                    </li>
+                    
+                    <li>
+                        <strong style="color: #7e22ce; font-size: 18px;">Rigorous Verification</strong>
+                        <p>Every panelist undergoes identity verification, email authentication, phone verification, 
+                        and profile completeness checks before activation.</p>
+                    </li>
+                    
+                    <li>
+                        <strong style="color: #7e22ce; font-size: 18px;">Profiling & Segmentation</strong>
+                        <p>Comprehensive profiling captures demographics, psychographics, behavioral data, and professional 
+                        information for precise targeting.</p>
+                    </li>
+                    
+                    <li>
+                        <strong style="color: #7e22ce; font-size: 18px;">Engagement Programs</strong>
+                        <p>Regular communication, fair incentives, transparent processes, and feedback mechanisms keep 
+                        panelists active and engaged.</p>
+                    </li>
+                    
+                    <li>
+                        <strong style="color: #7e22ce; font-size: 18px;">Continuous Quality Monitoring</strong>
+                        <p>Real-time fraud detection, response quality checks, behavioral pattern analysis, and regular 
+                        re-verification ensure data integrity.</p>
+                    </li>
+                    
+                    <li>
+                        <strong style="color: #7e22ce; font-size: 18px;">Profile Updates</strong>
+                        <p>Panelists are encouraged to update their profiles quarterly, ensuring fresh and accurate data 
+                        for research matching.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 6: Industries Covered -->
+        <div class="slide">
+            <div class="slide-content">
+                <h2>Industries Covered</h2>
+                <p>Comprehensive coverage across 25+ industry sectors</p>
+                
+                <div class="characteristics-list">
+                    <div class="characteristic-item">
+                        <strong>Technology & Electronics</strong>
+                        <p>Software, Hardware, Consumer Electronics, IT Services, Telecommunications</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Healthcare & Pharmaceuticals</strong>
+                        <p>Medical Devices, Pharma, Hospitals, Clinical Research, Health Insurance</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Financial Services</strong>
+                        <p>Banking, Insurance, Investment, Fintech, Wealth Management</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Retail & E-commerce</strong>
+                        <p>Online Retail, Brick & Mortar, Fashion, Grocery, Specialty Retail</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Automotive</strong>
+                        <p>Auto Manufacturing, Dealerships, Parts & Accessories, EV Technology</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Consumer Goods (CPG)</strong>
+                        <p>Food & Beverage, Personal Care, Household Products, Packaged Goods</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Travel & Hospitality</strong>
+                        <p>Airlines, Hotels, Restaurants, Tourism, Travel Tech</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Media & Entertainment</strong>
+                        <p>Streaming Services, Gaming, Publishing, Social Media, Broadcasting</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Real Estate & Construction</strong>
+                        <p>Property Development, Architecture, Home Improvement, Commercial RE</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Energy & Utilities</strong>
+                        <p>Oil & Gas, Renewable Energy, Electric Utilities, Energy Management</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Education & Training</strong>
+                        <p>EdTech, Universities, K-12, Corporate Training, Online Learning</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Professional Services</strong>
+                        <p>Consulting, Legal, Accounting, HR Services, Marketing Agencies</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 7: Personal & Household Characteristics -->
+        <div class="slide">
+            <div class="slide-content">
+                <h2>Personal & Household Characteristics</h2>
+                <p>Comprehensive demographic and household profiling for precise targeting</p>
+                
+                <div class="characteristics-list">
+                    <div class="characteristic-item">
+                        <strong>Age Groups</strong>
+                        <p>18-24, 25-34, 35-44, 45-54, 55-64, 65+ years</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Gender</strong>
+                        <p>Male, Female, Non-binary, Prefer not to say</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Income Levels</strong>
+                        <p>Low, Middle, Upper-middle, High income brackets (country-specific)</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Education</strong>
+                        <p>High School, Undergraduate, Graduate, Postgraduate, Professional Degrees</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Employment Status</strong>
+                        <p>Full-time, Part-time, Self-employed, Unemployed, Retired, Student</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Occupation</strong>
+                        <p>Executives, Managers, Professionals, Skilled Workers, Service Workers</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Household Size</strong>
+                        <p>Single person, Couples, Families with children, Multi-generational</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Marital Status</strong>
+                        <p>Single, Married, Divorced, Widowed, Domestic Partnership</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Children in Household</strong>
+                        <p>No children, Children under 5, Children 6-12, Teenagers 13-17</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Home Ownership</strong>
+                        <p>Own, Rent, Live with family, Company housing</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Geographic Location</strong>
+                        <p>Urban, Suburban, Rural areas; City size and region</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Ethnicity & Language</strong>
+                        <p>Multiple ethnic backgrounds, language preferences for surveys</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 8: Shopping Behaviour -->
+        <div class="slide">
+            <div class="slide-content">
+                <h2>Shopping Behaviour</h2>
+                <p>Deep insights into consumer purchasing patterns and preferences</p>
+                
+                <div class="characteristics-list">
+                    <div class="characteristic-item">
+                        <strong>Online Shopping Frequency</strong>
+                        <p>Daily, Weekly, Monthly shoppers; E-commerce preferences; Mobile vs Desktop</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Retail Store Visits</strong>
+                        <p>Department stores, Specialty retailers, Discount stores, Luxury boutiques</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Purchase Decision Factors</strong>
+                        <p>Price sensitivity, Brand loyalty, Quality focus, Reviews influence, Social proof</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Product Categories</strong>
+                        <p>Electronics, Fashion, Home & Garden, Groceries, Beauty, Automotive, Books</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Shopping Occasions</strong>
+                        <p>Routine purchases, Seasonal shopping, Gift buying, Impulse purchases, Sales events</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Payment Methods</strong>
+                        <p>Credit cards, Debit cards, Digital wallets, BNPL, Cash, Cryptocurrency</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Subscription Services</strong>
+                        <p>Streaming, Food delivery, Beauty boxes, Software, Meal kits, Fitness apps</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Brand Preferences</strong>
+                        <p>Premium brands, Value brands, Sustainable brands, Local vs International</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Shopping Influencers</strong>
+                        <p>Social media, Influencers, Family recommendations, Online reviews, Advertisements</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Sustainability Attitudes</strong>
+                        <p>Eco-friendly products, Ethical sourcing, Recyclable packaging preferences</p>
+                    </div>
+                </div>
+
+                <div class="highlight-box">
+                    <p><strong>Special Coverage:</strong> We track emerging trends like social commerce, livestream shopping, 
+                    AI-powered recommendations, and omnichannel experiences.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 9: Lifestyle & Sports Interest -->
+        <div class="slide">
+            <div class="slide-content">
+                <h2>Lifestyle & Sports Interest</h2>
+                <p>Understanding how panelists spend their time and engage with leisure activities</p>
+                
+                <div class="characteristics-list">
+                    <div class="characteristic-item">
+                        <strong>Hobbies & Interests</strong>
+                        <p>Reading, Cooking, Gardening, Photography, Arts & Crafts, Gaming, Music</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Sports Participation</strong>
+                        <p>Running, Gym/Fitness, Yoga, Swimming, Cycling, Team sports, Adventure sports</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Sports Viewership</strong>
+                        <p>Football, Cricket, Basketball, Tennis, Olympics, Formula 1, Esports</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Entertainment Preferences</strong>
+                        <p>Streaming services, Movies, TV shows, Podcasts, Live events, Concerts</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Travel Habits</strong>
+                        <p>Business travel, Leisure travel, Domestic vs International, Adventure vs Luxury</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Dining Preferences</strong>
+                        <p>Restaurant dining, Fast food, Fine dining, Food delivery, Cooking at home</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Social Activities</strong>
+                        <p>Social gatherings, Clubs/Organizations, Community involvement, Networking events</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Wellness & Self-Care</strong>
+                        <p>Meditation, Spa visits, Mental health apps, Sleep tracking, Nutrition focus</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Pet Ownership</strong>
+                        <p>Dogs, Cats, Other pets; Pet product purchases, Pet services usage</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Environmental Activities</strong>
+                        <p>Recycling, Sustainable living, Volunteering, Outdoor activities, Conservation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 10: Politics -->
+        <div class="slide">
+            <div class="slide-content">
+                <h2>Politics & Civic Engagement</h2>
+                <p>Understanding political views and civic participation</p>
+                
+                <div class="characteristics-list">
+                    <div class="characteristic-item">
+                        <strong>Political Affiliation</strong>
+                        <p>Conservative, Liberal, Moderate, Independent, Non-political (country-specific)</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Voting Behavior</strong>
+                        <p>Regular voters, Occasional voters, First-time voters, Non-voters</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Political Engagement</strong>
+                        <p>Actively engaged, Passive observer, Politically apathetic, Campaign involvement</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>News Consumption</strong>
+                        <p>Traditional media, Online news, Social media news, Multiple sources, Fact-checking</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Key Issues Interest</strong>
+                        <p>Economy, Healthcare, Education, Environment, Immigration, Security, Social justice</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Civic Participation</strong>
+                        <p>Community involvement, Volunteering, Activism, Town halls, Public consultations</p>
+                    </div>
+                </div>
+
+                <div class="highlight-box">
+                    <p><strong>Important Note:</strong> All political data is collected ethically and stored securely. 
+                    We respect diverse viewpoints and maintain strict neutrality in our research methodologies. Political 
+                    data is only shared in aggregated, anonymized form.</p>
+                </div>
+
+                <p style="margin-top: 20px;"><strong>Research Applications:</strong></p>
+                <ul>
+                    <li>Public opinion polling</li>
+                    <li>Policy impact studies</li>
+                    <li>Electoral behavior research</li>
+                    <li>Government program evaluation</li>
+                    <li>Political communication effectiveness</li>
+                    <li>Issue tracking and sentiment analysis</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 11: Investment & Finance -->
+        <div class="slide">
+            <div class="slide-content">
+                <h2>Investment & Finance</h2>
+                <p>Financial behavior, investment patterns, and banking relationships</p>
+                
+                <div class="characteristics-list">
+                    <div class="characteristic-item">
+                        <strong>Banking Relationships</strong>
+                        <p>Primary bank, Number of accounts, Digital banking usage, Mobile banking apps</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Investment Experience</strong>
+                        <p>Beginner, Intermediate, Advanced; Years of investing experience</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Investment Types</strong>
+                        <p>Stocks, Bonds, Mutual funds, ETFs, Real estate, Cryptocurrency, Gold, Commodities</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Investment Platforms</strong>
+                        <p>Traditional brokers, Online brokers, Robo-advisors, Direct investing, Trading apps</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Financial Goals</strong>
+                        <p>Retirement planning, Wealth accumulation, Income generation, Education funding</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Risk Tolerance</strong>
+                        <p>Conservative, Moderate, Aggressive; Risk assessment and portfolio allocation</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Credit Products</strong>
+                        <p>Credit cards usage, Personal loans, Mortgages, Car loans, Lines of credit</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Insurance Coverage</strong>
+                        <p>Life, Health, Auto, Home, Travel, Business insurance policies</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Fintech Adoption</strong>
+                        <p>Digital wallets, P2P payments, Buy-now-pay-later, Neobanks, Crypto exchanges</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Financial Planning</strong>
+                        <p>Budget tracking, Financial advisors, Retirement planning, Tax planning, Estate planning</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Savings Behavior</strong>
+                        <p>Emergency funds, Regular savings, High-yield accounts, CDs, Money market accounts</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Financial Literacy</strong>
+                        <p>Self-assessed knowledge, Educational resources used, Professional guidance</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 12: Technology & Electronics -->
+        <div class="slide">
+            <div class="slide-content">
+                <h2>Technology & Electronics</h2>
+                <p>Device ownership, tech adoption, and digital behavior</p>
+                
+                <div class="characteristics-list">
+                    <div class="characteristic-item">
+                        <strong>Device Ownership</strong>
+                        <p>Smartphones, Tablets, Laptops, Desktop PCs, Smart TVs, Smartwatches, E-readers</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Operating Systems</strong>
+                        <p>iOS vs Android, Windows, macOS, Linux; Cross-platform usage</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Smart Home Devices</strong>
+                        <p>Smart speakers, Security cameras, Smart thermostats, Smart lighting, Home automation</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Gaming</strong>
+                        <p>Gaming consoles, PC gaming, Mobile gaming, VR headsets, Cloud gaming</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Software & Apps</strong>
+                        <p>Productivity tools, Creative software, Communication apps, Entertainment apps</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Internet Usage</strong>
+                        <p>Broadband, Mobile data, Public WiFi; Daily screen time, Online hours</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Social Media Platforms</strong>
+                        <p>Facebook, Instagram, Twitter/X, LinkedIn, TikTok, YouTube, Reddit</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Tech Purchase Plans</strong>
+                        <p>Next 6 months: Phones, Computers, Wearables, Smart home, Audio devices</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Tech Proficiency</strong>
+                        <p>Basic, Intermediate, Advanced, Professional; Early adopters vs Late majority</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Emerging Tech Interest</strong>
+                        <p>AI/ChatGPT, VR/AR, Blockchain, IoT, 5G, Autonomous vehicles, Drones</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Digital Services</strong>
+                        <p>Cloud storage, Streaming subscriptions, Software subscriptions, Online learning</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Privacy & Security</strong>
+                        <p>VPN usage, Password managers, Two-factor authentication, Privacy concerns</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 13: Personal Health -->
+        <div class="slide">
+            <div class="slide-content">
+                <h2>Personal Health</h2>
+                <p>Health conditions, wellness practices, and healthcare utilization</p>
+                
+                <div class="characteristics-list">
+                    <div class="characteristic-item">
+                        <strong>General Health Status</strong>
+                        <p>Excellent, Very good, Good, Fair, Poor; Chronic conditions presence</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Chronic Conditions</strong>
+                        <p>Diabetes, Hypertension, Heart disease, Asthma, Arthritis, Allergies, Mental health</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Fitness Level</strong>
+                        <p>Very active, Moderately active, Somewhat active, Sedentary</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Exercise Frequency</strong>
+                        <p>Daily, 4-6 times/week, 2-3 times/week, Weekly, Rarely, Never</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Dietary Preferences</strong>
+                        <p>Omnivore, Vegetarian, Vegan, Pescatarian, Keto, Paleo, Gluten-free</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Preventive Care</strong>
+                        <p>Annual checkups, Dental visits, Vision exams, Screenings, Vaccinations</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Prescription Medications</strong>
+                        <p>Regular medications, OTC usage, Vitamin supplements, Herbal remedies</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Mental Health & Wellness</strong>
+                        <p>Stress levels, Therapy/counseling, Meditation, Mindfulness, Mental health apps</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Sleep Patterns</strong>
+                        <p>Hours per night, Sleep quality, Sleep disorders, Sleep tracking</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Healthcare Providers</strong>
+                        <p>Primary care physician, Specialists, Alternative medicine, Telehealth usage</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Health Technology</strong>
+                        <p>Fitness trackers, Health apps, Wearables, Telehealth platforms, Health portals</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Substance Use</strong>
+                        <p>Smoking status, Alcohol consumption, Tobacco use (research purposes only)</p>
+                    </div>
+                </div>
+
+                <div class="highlight-box">
+                    <p><strong>Privacy Assurance:</strong> All health data is handled with utmost confidentiality and in 
+                    compliance with HIPAA and international health data protection regulations. Data is anonymized for research purposes.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 14: Health Coverage & Attitudes -->
+        <div class="slide">
+            <div class="slide-content">
+                <h2>Health Coverage & Attitudes</h2>
+                <p>Insurance coverage, healthcare decision-making, and health attitudes</p>
+                
+                <div class="characteristics-list">
+                    <div class="characteristic-item">
+                        <strong>Health Insurance Type</strong>
+                        <p>Employer-sponsored, Individual market, Government (Medicare/Medicaid), Uninsured</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Insurance Coverage Level</strong>
+                        <p>Comprehensive, Standard, Basic; Deductible levels, Co-pay amounts</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Supplemental Insurance</strong>
+                        <p>Dental, Vision, Prescription drug, Critical illness, Accident insurance</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Healthcare Spending</strong>
+                        <p>Out-of-pocket expenses, Monthly premiums, Annual healthcare costs</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Provider Selection Factors</strong>
+                        <p>Network coverage, Cost, Reputation, Convenience, Recommendations</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Prescription Attitudes</strong>
+                        <p>Brand vs generic preference, Online pharmacy usage, Mail-order prescriptions</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Alternative Medicine</strong>
+                        <p>Openness to alternative treatments, Complementary medicine, Holistic approaches</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Healthcare Information Sources</strong>
+                        <p>Doctors, Online research, Family/friends, Health apps, Medical websites</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Telehealth Adoption</strong>
+                        <p>Video consultations, Remote monitoring, Digital prescriptions, Virtual urgent care</p>
+                    </div>
+                    
+                    <div class="characteristic-item">
+                        <strong>Health System Satisfaction</strong>
+                        <p>Overall satisfaction, Cost concerns, Access issues, Quality of care ratings</p>
+                    </div>
+                </div>
+
+                <p style="margin-top: 25px;"><strong>Healthcare Decision-Making:</strong></p>
+                <ul>
+                    <li>Primary decision-maker for household healthcare</li>
+                    <li>Shared decision-making with family members</li>
+                    <li>Influence of healthcare providers on treatment decisions</li>
+                    <li>Cost considerations in healthcare choices</li>
+                    <li>Willingness to try new treatments or medications</li>
+                    <li>Attitudes toward preventive care and wellness programs</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 15: Quality Parameters -->
+        <div class="slide">
+            <div class="slide-content">
+                <h2>Quality Parameters</h2>
+                <p>Our commitment to data integrity and research excellence</p>
+                
+                <div class="quality-grid">
+                    <div class="quality-card">
+                        <div class="quality-icon">🛡️</div>
+                        <h3 style="margin-top: 0; font-size: 18px;">Rigorous QC Protocols</h3>
+                        <p style="font-size: 14px;">Multi-layered quality checks, real-time monitoring, and fraud detection systems</p>
+                    </div>
+                    
+                    <div class="quality-card">
+                        <div class="quality-icon">✓</div>
+                        <h3 style="margin-top: 0; font-size: 18px;">Response Validation</h3>
+                        <p style="font-size: 14px;">Attention checks, consistency validation, speeders detection, straight-lining identification</p>
+                    </div>
+                    
+                    <div class="quality-card">
+                        <div class="quality-icon">🎯</div>
+                        <h3 style="margin-top: 0; font-size: 18px;">Profile Verification</h3>
+                        <p style="font-size: 14px;">Identity verification, demographic validation, behavioral pattern analysis</p>
+                    </div>
+                    
+                    <div class="quality-card">
+                        <div class="quality-icon">🔍</div>
+                        <h3 style="margin-top: 0; font-size: 18px;">Duplicate Detection</h3>
+                        <p style="font-size: 14px;">IP tracking, device fingerprinting, email verification, multiple account prevention</p>
+                    </div>
+                    
+                    <div class="quality-card">
+                        <div class="quality-icon">🤖</div>
+                        <h3 style="margin-top: 0; font-size: 18px;">Bot Prevention</h3>
+                        <p style="font-size: 14px;">CAPTCHA implementation, behavioral analysis, AI-powered bot detection</p>
+                    </div>
+                    
+                    <div class="quality-card">
+                        <div class="quality-icon">📊</div>
+                        <h3 style="margin-top: 0; font-size: 18px;">Data Quality Metrics</h3>
+                        <p style="font-size: 14px;">Completion rates, response time analysis, data consistency scoring</p>
+                    </div>
+                    
+                    <div class="quality-card">
+                        <div class="quality-icon">🔄</div>
+                        <h3 style="margin-top: 0; font-size: 18px;">Regular Audits</h3>
+                        <p style="font-size: 14px;">Quarterly panel health checks, profile freshness verification, engagement monitoring</p>
+                    </div>
+                    
+                    <div class="quality-card">
+                        <div class="quality-icon">🌍</div>
+                        <h3 style="margin-top: 0; font-size: 18px;">Geographic Validation</h3>
+                        <p style="font-size: 14px;">IP-based location verification, timezone consistency checks</p>
+                    </div>
+                    
+                    <div class="quality-card">
+                        <div class="quality-icon">🔐</div>
+                        <h3 style="margin-top: 0; font-size: 18px;">Data Security</h3>
+                        <p style="font-size: 14px;">SSL encryption, secure data storage, GDPR & privacy compliance</p>
+                    </div>
+                </div>
+
+                <div class="highlight-box" style="margin-top: 30px;">
+                    <h3 style="margin-top: 0;">Quality Guarantee</h3>
+                    <p>We maintain a 98% client satisfaction rate through our unwavering commitment to data quality. 
+                    Every project undergoes rigorous quality checks, and we offer data replacement guarantees for any 
+                    responses that don't meet our quality standards.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 16: Contact Us -->
+        <div class="slide">
+            <div class="slide-content">
+                <h2>Contact Us</h2>
+                <p style="font-size: 18px; margin-bottom: 30px;">Ready to access our global panel network? Get in touch with us today.</p>
+                
+                <div class="contact-box">
+                    <h3>FACTUM RESEARCH</h3>
+                    <div class="contact-info">
+                        <p>📧 Email: <a href="mailto:rfq@factumresearch.com">rfq@factumresearch.com</a></p>
+                        <p>📞 Phone: <a href="tel:+918690396627">+91 8690396627</a></p>
+                        <p>🏢 Address: B2-1424 Tower-B2 DLF Mypad TCG 6/6, Vibhuti Khand, Gomti Nagar, Lucknow - Uttar Pradesh 226010, India</p>
+                    </div>
+                </div>
+
+                <div class="services-grid" style="margin-top: 40px;">
+                    <div class="service-card">
+                        <h3>Request for Quotation</h3>
+                        <p>Send us your project requirements, target audience specifications, and timeline. 
+                        We'll provide a detailed proposal with feasibility, pricing, and delivery schedule.</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <h3>Panel Feasibility Check</h3>
+                        <p>Not sure if we can reach your target audience? Contact us for a free feasibility 
+                        assessment of your research requirements.</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <h3>Partnership Opportunities</h3>
+                        <p>Interested in partnering with us? We collaborate with research agencies, consultancies, 
+                        and brands globally.</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <h3>Schedule a Demo</h3>
+                        <p>Book a call with our team to learn more about our capabilities, quality processes, 
+                        and how we can support your research needs.</p>
+                    </div>
+                </div>
+
+                <div class="highlight-box" style="margin-top: 40px;">
+                    <p style="text-align: center; font-size: 18px; font-weight: 600; margin: 0;">
+                        Let's transform your research objectives into actionable insights.
+                    </p>
+                    <p style="text-align: center; margin-top: 10px; font-size: 16px;">
+                        Facts That Matter, Insights That Count
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // Optional: Add print functionality
+        function printPresentation() {
+            window.print();
+        }
+        
+        // Add print button if needed
+        if (window.location.search.includes('print=true')) {
+            setTimeout(() => {
+                window.print();
+            }, 1000);
+        }
+    </script>
+</body>
+</html>
