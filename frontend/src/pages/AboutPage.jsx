@@ -326,7 +326,8 @@ export const AboutPage = () => {
                       <img 
                         src={member.image} 
                         alt={member.name}
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-cover object-center"
+                        style={{ objectPosition: 'center center' }}
                       />
                     </div>
                     <div className="flex-1">
