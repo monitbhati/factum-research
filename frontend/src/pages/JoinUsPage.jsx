@@ -315,16 +315,6 @@ export const JoinUsPage = () => {
                             required
                           />
                         </div>
-                        <div>
-                          <Label htmlFor="profession" className="text-white drop-shadow-md">Profession *</Label>
-                          <Input
-                            id="profession"
-                            name="profession"
-                            value={signupData.profession}
-                            onChange={handleSignupChange}
-                            required
-                          />
-                        </div>
                         <Button
                           type="submit"
                           disabled={loading}
