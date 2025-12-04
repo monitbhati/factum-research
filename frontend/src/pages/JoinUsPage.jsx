@@ -49,7 +49,7 @@ export const JoinUsPage = () => {
     try {
       const response = await axios.post(`${API}/auth/signup`, signupData);
       toast.success('Registration successful!');
-      setSignupData({ firstName: '', lastName: '', email: '', age: '', country: '', profession: '', gender: '', password: '' });
+      setSignupData({ firstName: '', lastName: '', email: '', age: '', country: '', gender: '', password: '' });
       setActiveTab('login');
     } catch (error) {
       console.error('Signup error:', error);
