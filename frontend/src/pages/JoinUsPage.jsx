@@ -74,11 +74,20 @@ export const JoinUsPage = () => {
 
   const handleSignup = async (e) => {
     e.preventDefault();
+    
+    // Check if user agreed to terms and privacy policy
+    if (!agreedToTerms || !agreedToPrivacy) {
+      toast.error('Please agree to the Terms & Conditions and Privacy Policy to continue');
+      return;
+    }
+    
     setLoading(true);
     try {
       const response = await axios.post(`${API}/auth/signup`, signupData);
       toast.success('Registration successful!');
       setSignupData({ firstName: '', lastName: '', email: '', age: '', country: '', gender: '', password: '' });
+      setAgreedToTerms(false);
+      setAgreedToPrivacy(false);
       setActiveTab('login');
     } catch (error) {
       console.error('Signup error:', error);
