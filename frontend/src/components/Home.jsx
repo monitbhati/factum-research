@@ -353,15 +353,6 @@ export const Home = () => {
                   </div>
                   <div className="flex items-start">
                     <div className="w-14 h-14 bg-slate-100 rounded-xl flex items-center justify-center flex-shrink-0">
-                      <PhoneCall className="text-slate-700" size={24} />
-                    </div>
-                    <div className="ml-5">
-                      <div className="font-semibold text-gray-900 mb-1">Phone</div>
-                      <div className="text-gray-600">{mockData.company.phone}</div>
-                    </div>
-                  </div>
-                  <div className="flex items-start">
-                    <div className="w-14 h-14 bg-slate-100 rounded-xl flex items-center justify-center flex-shrink-0">
                       <MapPin className="text-slate-700" size={24} />
                     </div>
                     <div className="ml-5">
