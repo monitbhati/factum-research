@@ -4,7 +4,7 @@ import { Button } from '../components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
-import { User, Mail, MapPin, Briefcase, Calendar, LogOut, CheckCircle } from 'lucide-react';
+import { User, Mail, MapPin, Calendar, LogOut, CheckCircle } from 'lucide-react';
 import { toast } from 'sonner';
 import axios from 'axios';
 
