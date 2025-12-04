@@ -50,7 +50,7 @@ class UserResponse(BaseModel):
     email: EmailStr
     age: int
     country: str
-    profession: str
+    profession: Optional[str] = None
     gender: str
 
 class Token(BaseModel):
