@@ -379,9 +379,9 @@ export const JoinUsPage = () => {
                           </div>
                           <div>
                             <Label htmlFor="gender" className="text-white drop-shadow-md">Gender *</Label>
-                            <Select name="gender" onValueChange={(value) => handleSelectChange('gender', value)} required>
+                            <Select name="gender" value={signupData.gender} onValueChange={(value) => handleSelectChange('gender', value)} required>
                               <SelectTrigger>
-                                <SelectValue placeholder="Select" />
+                                <SelectValue placeholder="Select your gender" />
                               </SelectTrigger>
                               <SelectContent>
                                 <SelectItem value="male">Male</SelectItem>
