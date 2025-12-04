@@ -31,6 +31,8 @@ export const JoinUsPage = () => {
   });
   const [loading, setLoading] = useState(false);
   const [detectingCountry, setDetectingCountry] = useState(false);
+  const [agreedToTerms, setAgreedToTerms] = useState(false);
+  const [agreedToPrivacy, setAgreedToPrivacy] = useState(false);
 
   // Auto-detect country on component mount
   useEffect(() => {
