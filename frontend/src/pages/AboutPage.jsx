@@ -32,7 +32,7 @@ export const AboutPage = () => {
     },
     {
       name: 'Ayush Bhatnagar',
-      position: 'Client Services',
+      position: 'Sales and Business Development',
       image: '/team/client-services.png',
       quote: 'Building lasting partnerships is what drives us. We believe in understanding our clients\' unique challenges and delivering tailored research solutions that exceed expectations.'
     },
