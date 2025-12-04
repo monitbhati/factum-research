@@ -132,7 +132,18 @@ export const JoinUsPage = () => {
     
     setLoading(true);
     try {
-      const response = await axios.post(`${API}/auth/signup`, signupData);
+      // Map frontend fields to backend expected fields
+      const backendData = {
+        name: signupData.firstName,
+        surname: signupData.lastName,
+        email: signupData.email,
+        password: signupData.password,
+        age: parseInt(signupData.age),
+        country: signupData.country,
+        gender: signupData.gender
+      };
+      
+      const response = await axios.post(`${API}/auth/signup`, backendData);
       toast.success('Registration successful! Please login with your credentials.');
       setSignupData({ firstName: '', lastName: '', email: '', age: '', country: '', gender: '', password: '' });
       setAgreedToTerms(false);
