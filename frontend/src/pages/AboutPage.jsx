@@ -25,23 +25,27 @@ export const AboutPage = () => {
 
   const team = [
     {
-      name: 'Placeholder Name',
-      position: 'Founder & CEO',
+      name: 'Anuj Kumar',
+      position: 'Founder',
+      image: '/team/founder.png',
       quote: 'Our mission is to revolutionize market research by delivering authentic insights that drive meaningful business decisions. Quality and integrity are at the heart of everything we do.'
     },
     {
-      name: 'Placeholder Name',
-      position: 'Business Development Head',
+      name: 'Ayush Bhatnagar',
+      position: 'Client Services',
+      image: '/team/client-services.png',
       quote: 'Building lasting partnerships is what drives us. We believe in understanding our clients\' unique challenges and delivering tailored research solutions that exceed expectations.'
     },
     {
-      name: 'Placeholder Name',
+      name: 'Anand Yadav',
       position: 'Operations Head',
+      image: '/team/operations-head.jpeg',
       quote: 'Excellence in execution is our standard. From project inception to final delivery, our team ensures every detail meets the highest quality benchmarks through rigorous processes.'
     },
     {
-      name: 'Placeholder Name',
+      name: 'Neeraj Saxena',
       position: 'Chief Financial Officer',
+      image: '/team/cfo.png',
       quote: 'Sustainable growth through strategic investments in technology and talent enables us to maintain competitive pricing while delivering premium research quality to our clients.'
     }
   ];
