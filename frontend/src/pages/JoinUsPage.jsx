@@ -517,8 +517,10 @@ export const JoinUsPage = () => {
                   </div>
                 </div>
               </div>
+              {/* End RIGHT COLUMN */}
               
             </div>
+            {/* End grid */}
           </div>
         </section>
 
