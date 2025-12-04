@@ -1,6 +1,6 @@
-from fastapi import APIRouter, HTTPException, status, Depends
+from fastapi import APIRouter, HTTPException, status, Depends, Header
 from models.user import UserCreate, UserLogin, User, UserInDB, UserResponse, LoginResponse
-from utils.auth import get_password_hash, verify_password, create_access_token
+from utils.auth import get_password_hash, verify_password, create_access_token, decode_access_token
 from datetime import datetime
 import logging
 
