@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Button } from '../components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '../components/ui/card';
@@ -30,6 +30,33 @@ export const JoinUsPage = () => {
     password: ''
   });
   const [loading, setLoading] = useState(false);
+  const [detectingCountry, setDetectingCountry] = useState(false);
+
+  // Auto-detect country on component mount
+  useEffect(() => {
+    detectUserCountry();
+  }, []);
+
+  const detectUserCountry = async () => {
+    try {
+      setDetectingCountry(true);
+      // Using ipapi.co free API for IP geolocation
+      const response = await axios.get('https://ipapi.co/json/');
+      
+      if (response.data && response.data.country_name) {
+        setSignupData(prev => ({
+          ...prev,
+          country: response.data.country_name
+        }));
+        toast.success(`Country detected: ${response.data.country_name}`);
+      }
+    } catch (error) {
+      console.log('Could not auto-detect country:', error);
+      // Silently fail - user can still enter country manually
+    } finally {
+      setDetectingCountry(false);
+    }
+  };
 
   const handleSignupChange = (e) => {
     setSignupData({ ...signupData, [e.target.name]: e.target.value });
