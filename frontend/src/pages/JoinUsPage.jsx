@@ -235,10 +235,13 @@ export const JoinUsPage = () => {
       <div className="relative z-10">
         <Header />
 
-
-        {/* Signup/Login Forms */}
+        {/* Two Column Layout: Form + Content */}
         <section className="pt-32 pb-12 px-4 sm:px-6 lg:px-8">
-          <div className="container mx-auto max-w-2xl">
+          <div className="container mx-auto max-w-7xl">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              
+              {/* LEFT COLUMN: Signup/Login Form */}
+              <div>
             <Card className="border-2 border-white/30 shadow-2xl bg-white/10 backdrop-blur-lg">
               <CardHeader>
                 <div className="flex gap-2 mb-6">
