@@ -469,13 +469,10 @@ export const JoinUsPage = () => {
                 )}
               </CardContent>
             </Card>
-          </div>
-        </section>
+              </div>
 
-        {/* Benefits Section */}
-        <section className="py-16 px-4 sm:px-6 lg:px-8 min-h-[450px] flex items-center">
-          <div className="container mx-auto">
-            <div className="max-w-4xl mx-auto text-center">
+              {/* RIGHT COLUMN: Content */}
+              <div>
               <div className="inline-block px-5 py-2 bg-yellow-400/90 backdrop-blur-sm rounded-full text-sm font-bold text-purple-900 mb-4 shadow-lg">
                 Your Voice Matters
               </div>
