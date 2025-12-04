@@ -75,6 +75,55 @@ export const JoinUsPage = () => {
   const handleSignup = async (e) => {
     e.preventDefault();
     
+    // Comprehensive client-side validation with specific error messages
+    const missingFields = [];
+    
+    if (!signupData.firstName || signupData.firstName.trim() === '') {
+      missingFields.push('First Name');
+    }
+    
+    if (!signupData.lastName || signupData.lastName.trim() === '') {
+      missingFields.push('Last Name');
+    }
+    
+    if (!signupData.email || signupData.email.trim() === '') {
+      missingFields.push('Email');
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(signupData.email)) {
+      toast.error('Please enter a valid email address');
+      return;
+    }
+    
+    if (!signupData.password || signupData.password.trim() === '') {
+      missingFields.push('Password');
+    } else if (signupData.password.length < 6) {
+      toast.error('Password must be at least 6 characters long');
+      return;
+    }
+    
+    if (!signupData.age || signupData.age === '') {
+      missingFields.push('Age');
+    } else if (parseInt(signupData.age) < 18) {
+      toast.error('You must be at least 18 years old to register');
+      return;
+    } else if (parseInt(signupData.age) > 100) {
+      toast.error('Please enter a valid age');
+      return;
+    }
+    
+    if (!signupData.country || signupData.country.trim() === '') {
+      missingFields.push('Country');
+    }
+    
+    if (!signupData.gender || signupData.gender === '') {
+      missingFields.push('Gender');
+    }
+    
+    // Show error for missing fields
+    if (missingFields.length > 0) {
+      toast.error(`Please fill in the following fields: ${missingFields.join(', ')}`);
+      return;
+    }
+    
     // Check if user agreed to terms and privacy policy
     if (!agreedToTerms || !agreedToPrivacy) {
       toast.error('Please agree to the Terms & Conditions and Privacy Policy to continue');
@@ -84,29 +133,41 @@ export const JoinUsPage = () => {
     setLoading(true);
     try {
       const response = await axios.post(`${API}/auth/signup`, signupData);
-      toast.success('Registration successful!');
+      toast.success('Registration successful! Please login with your credentials.');
       setSignupData({ firstName: '', lastName: '', email: '', age: '', country: '', gender: '', password: '' });
       setAgreedToTerms(false);
       setAgreedToPrivacy(false);
       setActiveTab('login');
     } catch (error) {
       console.error('Signup error:', error.message || 'Registration failed');
-      let errorMessage = 'Registration failed';
+      let errorMessage = 'Registration failed. Please try again.';
       
       if (error.response?.data?.detail) {
         // Handle both string and array formats
         if (typeof error.response.data.detail === 'string') {
           errorMessage = error.response.data.detail;
         } else if (Array.isArray(error.response.data.detail)) {
-          errorMessage = error.response.data.detail.map(err => err.msg || err).join(', ');
+          // Parse validation errors from backend
+          const errors = error.response.data.detail.map(err => {
+            if (err.msg) {
+              const field = err.loc ? err.loc[err.loc.length - 1] : 'field';
+              return `${field}: ${err.msg}`;
+            }
+            return err;
+          });
+          errorMessage = errors.join('; ');
         } else {
           errorMessage = 'Registration failed. Please check your information.';
         }
-      } else if (error.message) {
+      } else if (error.response?.status === 400) {
+        errorMessage = 'Email already registered or invalid data. Please check your information.';
+      } else if (error.response?.status === 422) {
+        errorMessage = 'Please check all fields are filled correctly.';
+      } else if (error.message && error.message !== 'Network Error') {
         errorMessage = error.message;
       }
       
-      toast.error(errorMessage);
+      toast.error(errorMessage, { duration: 5000 });
     } finally {
       setLoading(false);
     }
