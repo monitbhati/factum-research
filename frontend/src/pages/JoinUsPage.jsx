@@ -22,7 +22,6 @@ export const JoinUsPage = () => {
     email: '',
     age: '',
     country: '',
-    profession: '',
     gender: '',
     password: ''
   });
