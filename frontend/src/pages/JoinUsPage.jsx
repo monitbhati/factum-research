@@ -321,6 +321,7 @@ export const JoinUsPage = () => {
                               name="firstName"
                               value={signupData.firstName}
                               onChange={handleSignupChange}
+                              placeholder="Enter your first name"
                               required
                             />
                           </div>
@@ -331,6 +332,7 @@ export const JoinUsPage = () => {
                               name="lastName"
                               value={signupData.lastName}
                               onChange={handleSignupChange}
+                              placeholder="Enter your last name"
                               required
                             />
                           </div>
