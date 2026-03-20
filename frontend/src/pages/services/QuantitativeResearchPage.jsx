@@ -15,31 +15,30 @@ import {
   BarChart3
 } from 'lucide-react';
 
-export const OnlineSamplingPage = () => {
+export const QuantitativeResearchPage = () => {
   return (
     <div className="min-h-screen bg-white relative">
       {/* Full Page Background Image */}
       <div className="fixed inset-0 z-0">
         <img 
-          src="https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg" 
-          alt="Online Sampling"
+          src="https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg" 
+          alt="Quantitative Research"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-purple-900/90 via-pink-900/85 to-yellow-900/75"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-purple-900/90 via-pink-900/85 to-yellow-900/85"></div>
       </div>
       
       <div className="relative z-10">
-      <Header />
+        <Header />
 
-      {/* Hero Section */}
-      <section className="pt-32 pb-24 px-4 sm:px-6 lg:px-8 relative">
-        <div className="container mx-auto">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight text-white drop-shadow-lg">
-              Online Sampling
+        {/* Hero Section */}
+        <section className="pt-32 pb-16 px-4 sm:px-6 lg:px-8">
+          <div className="container mx-auto max-w-4xl text-center">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
+              Quantitative Research
             </h1>
-            <p className="text-lg sm:text-xl mb-8 leading-relaxed text-gray-100 drop-shadow-md">
-              Precision-targeted digital panels delivering authentic respondent engagement across B2B, B2C, and healthcare sectors worldwide
+            <p className="text-lg sm:text-xl text-gray-100 leading-relaxed drop-shadow-md">
+              Large-scale quantitative studies delivering statistically significant insights across diverse populations and market segments
             </p>
             <Link to="/contact">
               <Button size="lg" className="bg-gradient-to-r from-yellow-500 to-pink-700 hover:from-yellow-600 hover:to-pink-800 text-lg px-8 h-14">
