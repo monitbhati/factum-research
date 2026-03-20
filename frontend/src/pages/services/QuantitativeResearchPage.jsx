@@ -53,9 +53,9 @@ export const QuantitativeResearchPage = () => {
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-white drop-shadow-lg mb-4">What is Online Sampling?</h2>
+            <h2 className="text-4xl font-bold text-white drop-shadow-lg mb-4">What is Quantitative Research?</h2>
             <p className="text-lg text-gray-100 drop-shadow-md max-w-3xl mx-auto">
-              Online sampling connects you with verified, engaged respondents through our extensive digital panel network, ensuring quality data collection for your research objectives.
+              Quantitative research employs statistical methods and large sample sizes to measure, analyze, and quantify market behaviors, preferences, and trends with mathematical precision.
             </p>
           </div>
         </div>
