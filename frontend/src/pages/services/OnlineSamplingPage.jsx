@@ -54,7 +54,7 @@ export const OnlineSamplingPage = () => {
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-white drop-shadow-lg mb-4">What is Online Sampling?</h2>
             <p className="text-gray-100 leading-relaxed drop-shadow-md">
-              Online sampling is the process of recruiting survey respondents through digital channels to participate in market research studies. We maintain verified panels of diverse participants across demographics, industries, and geographies, enabling precise targeting for any research objective.
+              Quantitative research is a systematic investigation that uses structured surveys, polls, and questionnaires to collect numerical data from large sample sizes. This methodology allows us to quantify attitudes, opinions, behaviors, and other defined variables to generate statistically reliable results that can be generalized to larger populations.
             </p>
           </div>
         </div>
