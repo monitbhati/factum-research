@@ -19,7 +19,7 @@ const services = [
       'Global Reach Across 50+ Countries',
       'Real-Time Quality Monitoring'
     ],
-    slug: 'online-sampling'
+    slug: 'quantitative-research'
   },
   {
     id: 2,
