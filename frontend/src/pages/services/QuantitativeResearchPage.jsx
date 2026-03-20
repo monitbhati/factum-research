@@ -149,22 +149,22 @@ export const QuantitativeResearchPage = () => {
                 <div className="w-14 h-14 bg-orange-100 rounded-xl flex items-center justify-center mb-4">
                   <Zap className="text-orange-600" size={28} />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-3">Fast Deployment</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">Advanced Analytics</h3>
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  Rapid sample delivery with real-time monitoring dashboards allowing you to track fieldwork progress and response rates as they happen.
+                  Sophisticated analytical tools and techniques including multivariate analysis, segmentation, and predictive modeling for deeper insights.
                 </p>
                 <ul className="space-y-2">
                   <li className="flex items-start">
                     <CheckCircle className="text-green-600 mr-2 flex-shrink-0 mt-0.5" size={16} />
-                    <span className="text-sm text-gray-700">Quick turnaround times</span>
+                    <span className="text-sm text-gray-700">Multivariate analysis</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="text-green-600 mr-2 flex-shrink-0 mt-0.5" size={16} />
-                    <span className="text-sm text-gray-700">Real-time dashboards</span>
+                    <span className="text-sm text-gray-700">Statistical modeling</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="text-green-600 mr-2 flex-shrink-0 mt-0.5" size={16} />
-                    <span className="text-sm text-gray-700">Progress tracking</span>
+                    <span className="text-sm text-gray-700">Predictive insights</span>
                   </li>
                 </ul>
               </CardContent>
