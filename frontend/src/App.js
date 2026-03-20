@@ -27,7 +27,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/services" element={<ServicesPage />} />
-          <Route path="/services/online-sampling" element={<OnlineSamplingPage />} />
+          <Route path="/services/quantitative-research" element={<QuantitativeResearchPage />} />
           <Route path="/services/cati-excellence" element={<CATIPage />} />
           <Route path="/services/qualitative-deep-dives" element={<QualitativePage />} />
           <Route path="/services/survey-designing" element={<SurveyDesigningPage />} />
