@@ -271,10 +271,10 @@ export const QuantitativeResearchPage = () => {
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-white drop-shadow-lg mb-6">
-            Ready to Access Quality Online Samples?
+            Ready to Launch Your Quantitative Study?
           </h2>
           <p className="text-lg text-gray-100 drop-shadow-md mb-8 max-w-2xl mx-auto">
-            Let's discuss your sample requirements and how we can support your research
+            Let's discuss your research objectives and design a statistically robust study
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/contact">
