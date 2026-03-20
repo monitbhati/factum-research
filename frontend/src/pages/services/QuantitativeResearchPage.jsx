@@ -176,47 +176,47 @@ export const QuantitativeResearchPage = () => {
       {/* Specialty Areas */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-4xl font-bold text-white drop-shadow-lg mb-12 text-center">Our Specialty Areas</h2>
+          <h2 className="text-4xl font-bold text-white drop-shadow-lg mb-12 text-center">Research Methodologies</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white/95 backdrop-blur-md p-8 rounded-2xl border-2 border-blue-200">
               <Users className="text-pink-700 mb-4" size={40} />
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">B2B Sampling</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">Survey Research</h3>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Access decision-makers, professionals, and business leaders across industries with verified job titles and company profiles.
+                Comprehensive survey methodologies including online, telephone, and mixed-mode approaches for maximum reach and response quality.
               </p>
               <ul className="space-y-2 text-sm text-gray-700">
-                <li>• C-Suite Executives</li>
-                <li>• Department Heads</li>
-                <li>• Industry Specialists</li>
-                <li>• SME Owners</li>
+                <li>• Online Surveys</li>
+                <li>• Telephone Interviews</li>
+                <li>• Mixed-Mode Studies</li>
+                <li>• Panel Research</li>
               </ul>
             </div>
 
             <div className="bg-white/95 backdrop-blur-md p-8 rounded-2xl border-2 border-green-200">
               <BarChart3 className="text-green-600 mb-4" size={40} />
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">B2C Sampling</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">Market Measurement</h3>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Reach consumers across all demographics, from general population studies to highly specific niche audience segments.
+                Precise market sizing, brand tracking, and performance measurement studies with statistical accuracy and trend analysis.
               </p>
               <ul className="space-y-2 text-sm text-gray-700">
-                <li>• General Population</li>
-                <li>• Lifestyle Segments</li>
-                <li>• Product Users</li>
-                <li>• Brand Loyalists</li>
+                <li>• Market Sizing</li>
+                <li>• Brand Tracking</li>
+                <li>• Usage & Attitude</li>
+                <li>• Competitive Analysis</li>
               </ul>
             </div>
 
             <div className="bg-white/95 backdrop-blur-md p-8 rounded-2xl border-2 border-purple-200">
               <Shield className="text-purple-600 mb-4" size={40} />
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Healthcare Sampling</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">Statistical Analysis</h3>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Specialized panels of healthcare professionals, patients, and caregivers with verified medical credentials and conditions.
+                Advanced statistical techniques including regression analysis, factor analysis, and clustering for deep data insights.
               </p>
               <ul className="space-y-2 text-sm text-gray-700">
-                <li>• Physicians & Specialists</li>
-                <li>• Nurses & Allied Health</li>
-                <li>• Patient Communities</li>
-                <li>• Caregivers</li>
+                <li>• Regression Analysis</li>
+                <li>• Factor Analysis</li>
+                <li>• Cluster Analysis</li>
+                <li>• Conjoint Analysis</li>
               </ul>
             </div>
           </div>
