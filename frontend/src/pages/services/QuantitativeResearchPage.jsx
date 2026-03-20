@@ -97,22 +97,22 @@ export const QuantitativeResearchPage = () => {
                 <div className="w-14 h-14 bg-green-100 rounded-xl flex items-center justify-center mb-4">
                   <Shield className="text-green-600" size={28} />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-3">Quality Assurance</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">Data Validation</h3>
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  Multi-layered validation processes including fraud detection, attention checks, and behavioral analysis to ensure authentic, engaged respondents.
+                  Comprehensive data cleaning and validation protocols including outlier detection, consistency checks, and statistical verification processes.
                 </p>
                 <ul className="space-y-2">
                   <li className="flex items-start">
                     <CheckCircle className="text-green-600 mr-2 flex-shrink-0 mt-0.5" size={16} />
-                    <span className="text-sm text-gray-700">Real-time fraud detection</span>
+                    <span className="text-sm text-gray-700">Outlier detection</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="text-green-600 mr-2 flex-shrink-0 mt-0.5" size={16} />
-                    <span className="text-sm text-gray-700">Attention check mechanisms</span>
+                    <span className="text-sm text-gray-700">Consistency validation</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="text-green-600 mr-2 flex-shrink-0 mt-0.5" size={16} />
-                    <span className="text-sm text-gray-700">Response pattern analysis</span>
+                    <span className="text-sm text-gray-700">Statistical verification</span>
                   </li>
                 </ul>
               </CardContent>
